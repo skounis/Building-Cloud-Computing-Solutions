@@ -21,7 +21,8 @@ Learning Objectives
 1. Identify primary factors that influence the success of a technical project
 2. Cultivating positive team dynamics through transparent and timely communication
 
-> Quarterly schedule that identifies week by week what it is that you'll build
+> Quarterly schedule that identifies week by week what it is that you'll build.
+> Weekly Demo: _If you can't demo each week you probably not going to hit your deadline_
 
 
 
