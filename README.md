@@ -66,4 +66,6 @@ GitHub Actions
 Sample onboarding scripts and resources 
 * https://github.com/noahgift/multi-cloud-onboard
 
-CI: _The software is always in a known state_
+CI: 
+* The software is always in a known state
+* Saves time
