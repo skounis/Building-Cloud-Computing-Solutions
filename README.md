@@ -46,9 +46,22 @@ Anti-patterns
 
 ## Week III
 
+### AWS Cloud
 Tests:
 * Functional
 * Integration
 * Load
 
 > Linting: Catches bugs before they happen. 
+
+Python Virtual Env:
+* Isolates Python to a directory
+* Best practice
+
+
+GitHub Actions
+* Continuous Integration: Form of automated testing.
+* SaaS based continuous integration server
+
+Sample onboarding scripts and resources 
+* https://github.com/noahgift/multi-cloud-onboard
