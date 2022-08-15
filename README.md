@@ -25,6 +25,8 @@ Learning Objectives
 > * **Weekly Demo**: _If you can't demo each week you probably not going to hit your deadline_
 > * The code is **always in a deployable state**.
 > * **Automated testing**: **If it is not automated, it is broken**
+> * Tickets sweet spot: 4 hours to 3 days time window
+> * Avoid the hero, _who jumps in and save the day_ (hero-drived development)
 
 
 
