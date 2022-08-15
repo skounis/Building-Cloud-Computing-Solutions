@@ -50,3 +50,5 @@ Tests:
 * Functional
 * Integration
 * Load
+
+> Linting: Catches bugs before they happen. 
