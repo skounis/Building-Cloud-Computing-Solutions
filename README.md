@@ -16,9 +16,9 @@ Ideas of what it takes to be effective in terms of a team
 7. External Support and Recognition
 8. Principled Leadership
 
-
+### Effective Technical Project Management
 Learning Objectives
 1. Identify primary factors that influence the success of a technical project
-
+2. Cultivating positive team dynamics through transparent and timely communication
 ### Reference 
 * [Teamwork: What Must Go Right/What Can Go Wrong (SAGE Series in Interpersonal Communication)](https://www.amazon.com/Teamwork-Right-Wrong-Interpersonal-Communication/dp/0803932901) by Carl Larson (Author), Frank M J LaFasto (Author)
