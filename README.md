@@ -42,3 +42,11 @@ Anti-patterns
 
 ### Reference 
 * [Teamwork: What Must Go Right/What Can Go Wrong (SAGE Series in Interpersonal Communication)](https://www.amazon.com/Teamwork-Right-Wrong-Interpersonal-Communication/dp/0803932901) by Carl Larson (Author), Frank M J LaFasto (Author)
+
+
+## Week III
+
+Tests:
+* Functional
+* Integration
+* Load
