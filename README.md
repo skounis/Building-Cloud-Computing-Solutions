@@ -30,6 +30,15 @@ Key principles
 * Avoid the hero, _who jumps in and save the day_ (hero-drived development)
 * Kaizen, from Japanese Automobile Industry: Continuous Improvement
 
+Anti-patterns 
+1. Hero-Driven development
+2. Crisis-Driven development
+3. HiPPO-Diven development (Highest-paid person's opinion, e.g CEO. Investor, ...) 
+4. Heavy SCRUM: Mimic what appears to be succesful. 
+5. Faith in people vs. Faith in process.
+
+
+> Hope is not a strategy
 
 ### Reference 
 * [Teamwork: What Must Go Right/What Can Go Wrong (SAGE Series in Interpersonal Communication)](https://www.amazon.com/Teamwork-Right-Wrong-Interpersonal-Communication/dp/0803932901) by Carl Larson (Author), Frank M J LaFasto (Author)
