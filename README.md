@@ -69,3 +69,12 @@ Sample onboarding scripts and resources
 CI: 
 * The software is always in a known state
 * Saves time
+
+### Azure Cloud
+* Unit tests: low level. 
+* Integration tests: verify that different modules or services worked well together. 
+* Functional tests: Are verifying that the business requirements of an application say a web service returns the right status code. 
+* End to end testing: Is a way of mimicking users and how they use the software 
+* Acceptance testing: A formalized way of verifying that let's say a payroll application sends out the payments. 
+* Performance testing or load testing: Is going to test how the app will perform under load. 
+* Basic sanity testing: It verifies that if you also do some exploratory data analysis that you can ensure that things are working properly. 
