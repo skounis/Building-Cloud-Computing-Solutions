@@ -80,3 +80,6 @@ CI:
 * Basic sanity testing: It verifies that if you also do some exploratory data analysis that you can ensure that things are working properly. 
 
 > How much testing: Just enough to solve the problem. 
+
+Testing Strategy:
+* Just right: Not too much, neither too litle. Just enough for knowing what we do works. 
