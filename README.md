@@ -84,3 +84,8 @@ CI:
 Testing Strategy:
 * Just right: Not too much, neither too litle. Just enough for knowing what we do works. 
 * Judgment: Do you suspect something may be wrong, write the test.
+* Save time: The most common mistake developers think of. Do not debug the same code again.
+* Automation: 
+
+It is called "Kaizen":
+> [Kaizen](https://en.wikipedia.org/wiki/Kaizen) is a concept referring to business activities that continuously improve all functions and involve all employees from the CEO to the assembly line workers. Kaizen also applies to processes, such as purchasing and logistics, that cross organizational boundaries into the supply chain. 
