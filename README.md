@@ -83,3 +83,4 @@ CI:
 
 Testing Strategy:
 * Just right: Not too much, neither too litle. Just enough for knowing what we do works. 
+* Judgment: Do you suspect something may be wrong, write the test.
