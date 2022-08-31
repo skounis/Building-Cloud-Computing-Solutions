@@ -78,3 +78,5 @@ CI:
 * Acceptance testing: A formalized way of verifying that let's say a payroll application sends out the payments. 
 * Performance testing or load testing: Is going to test how the app will perform under load. 
 * Basic sanity testing: It verifies that if you also do some exploratory data analysis that you can ensure that things are working properly. 
+
+> How much testing: Just enough to solve the problem. 
