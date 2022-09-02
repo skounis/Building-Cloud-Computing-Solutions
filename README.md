@@ -143,7 +143,12 @@ source ~./.cdf-gcp-flask-ml-deploy/bin/activate
 make install
 ```
 
-run:
+Run localy (Cloud ENV):
 ```bash
 python main.py
+```
+
+Google Cloud Deploy
+```bash
+gcloud app deploy
 ```
