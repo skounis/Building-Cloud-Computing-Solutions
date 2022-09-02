@@ -113,3 +113,5 @@ source .cdf-scaffold/bin/activate
 ssh-keygen -t rsa
 ```
 
+### Continuous Delivery
+> The code is always in a deployable state both in term the application software and the infrastructure. 
