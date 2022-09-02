@@ -104,3 +104,12 @@ For use with Cloud9, Azure and GCP
 ### Google Cloud 
 #### Google Cloud resources and futher reading/videos
 * https://paiml.com/docs/home/books/cloud-computing-for-data/chapter01-getting-started/#gcp-google-cloud-platform
+
+#### Create a virtual env
+```bash
+which virtualenv
+virtualenv ~/.cdf-scaffold
+source .cdf-scaffold/bin/activate
+ssh-keygen -t rsa
+```
+
