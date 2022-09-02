@@ -142,3 +142,8 @@ virtualenv ~./.cdf-gcp-flask-ml-deploy
 source ~./.cdf-gcp-flask-ml-deploy/bin/activate
 make install
 ```
+
+run:
+```bash
+python main.py
+```
