@@ -120,4 +120,9 @@ ssh-keygen -t rsa
 Some examples:
 * GitHub Actions
 * Jenkings
-* AWS Code Build
+* AWS Code Build (Cloud native)
+
+Jobs targeting the code:
+* Lint the code
+* Test the code
+* Deploy the code/application
