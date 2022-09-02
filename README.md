@@ -135,3 +135,9 @@ Some examples:
 
 #### Continuous Delivery - A real example
 * Repo: https://github.com/skounis/cdf-gcp-flask-ml-deploy
+
+Setup
+```bash
+virtualenv ~./.cdf-gcp-flask-ml-deploy
+source ~./.cdf-gcp-flask-ml-deploy/bin/activate
+```
