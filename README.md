@@ -126,3 +126,9 @@ Jobs targeting the code:
 * Lint the code
 * Test the code
 * Deploy the code/application
+
+#### Infrastructure as Code (IaC)
+Update or create an environment. It will be mapped to the source control (eg `staging`, `test` or `production` branches). We have ENVs for reach branch. 
+Some examples:
+* Terraform
+* Cloud Formation
