@@ -113,10 +113,10 @@ source .cdf-scaffold/bin/activate
 ssh-keygen -t rsa
 ```
 
-### Continuous Delivery
+#### Continuous Delivery
 > The code is always in a deployable state both in term the application software and the infrastructure. 
 
-### Build Servers
+#### Build Servers
 Some examples:
 * GitHub Actions
 * Jenkings
@@ -127,8 +127,11 @@ Jobs targeting the code:
 * Test the code
 * Deploy the code/application
 
-#### Infrastructure as Code (IaC)
+##### Infrastructure as Code (IaC)
 Update or create an environment. It will be mapped to the source control (eg `staging`, `test` or `production` branches). We have ENVs for reach branch. 
 Some examples:
 * Terraform
 * Cloud Formation
+
+#### Continuous Delivery - A real example
+* Repo: https://github.com/skounis/cdf-gcp-flask-ml-deploy
