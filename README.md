@@ -94,3 +94,8 @@ It is called "Kaizen":
 * https://paiml.com/docs/home/books/cloud-computing-for-data/chapter01-getting-started/#microsoft-azure
 * [Azure Cloud Shell - Introduction](https://www.youtube.com/watch?v=rXXtJpcVems)
 * [Azure Integration - Scaffold](https://www.youtube.com/watch?v=0IAcF4cfGmI)
+
+
+### Scaffold Python Project 
+For use with Cloud9, Azure and GCP
+* https://github.com/skounis/cdf-scaffold
