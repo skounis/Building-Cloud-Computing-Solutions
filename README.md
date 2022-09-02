@@ -89,3 +89,8 @@ Testing Strategy:
 
 It is called "Kaizen":
 > [Kaizen](https://en.wikipedia.org/wiki/Kaizen) is a concept referring to business activities that continuously improve all functions and involve all employees from the CEO to the assembly line workers. Kaizen also applies to processes, such as purchasing and logistics, that cross organizational boundaries into the supply chain. 
+
+### Azure resources and futher reading/videos
+* https://paiml.com/docs/home/books/cloud-computing-for-data/chapter01-getting-started/#microsoft-azure
+* [Azure Cloud Shell - Introduction](https://www.youtube.com/watch?v=rXXtJpcVems)
+* [Azure Integration - Scaffold](https://www.youtube.com/watch?v=0IAcF4cfGmI)
