@@ -140,4 +140,5 @@ Setup
 ```bash
 virtualenv ~./.cdf-gcp-flask-ml-deploy
 source ~./.cdf-gcp-flask-ml-deploy/bin/activate
+make install
 ```
