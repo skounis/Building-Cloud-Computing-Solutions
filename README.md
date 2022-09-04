@@ -152,3 +152,13 @@ Google Cloud Deploy
 ```bash
 gcloud app deploy
 ```
+
+#### Cloud Build
+1. Create a triger (region europe-west1)
+    - https://console.cloud.google.com/cloud-build/triggers;region=europe-west1?project=cdf-cloud-data-cd
+2. Configure settings
+    - https://console.cloud.google.com/cloud-build/settings/service-account?project=cdf-cloud-data-cd
+3. Settings
+    - Enable "App Engine": You can do deploys for me
+    - Enable "Service Accounts": Do this on my behalf.
+4. Make a commit to `master`
