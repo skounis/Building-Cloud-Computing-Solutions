@@ -180,6 +180,16 @@ Cloud computing:
 * Paying for what you use
 * Comperative advandage: You focus on things you are good at, leaving the rest to others.
 
+
+Cloud economics
+* Elasticity: Adjust the resources
+* Avelabilty: Does the server respond, how many 9s. The services are desinged to be available ans scalable
+* Self Service: Work around IT procurement, bureaucracy (e.g. vending machine)
+* Reduced complexity: Focus on solving the business problem (not security or network etc, since the cloud ventor takes care)
+* Total Cost of Ownership (TCO): Goes down in the long term
+* Operational Resiliance: How do we perform on a crisis (e.g. natural disaster in physical server). The application and the infrastrure are designed to handle failures
+* Busines Agility: Riding the wave that may crush you if you go against. Leveraging the cloud native resources  
+
 Links and Resources
 
 * https://aws.amazon.com/cloud9/
@@ -187,4 +197,7 @@ Links and Resources
 * https://cloud.google.com/shell/
 * https://docs.microsoft.com/en-us/azure/cloud-shell/overview
 * [Brief introduction... what is cloud computing](https://www.youtube.com/watch?v=KDWkY0srFpg)
+* [Brief introduction to cloud economics](https://www.youtube.com/watch?v=22mtNlfGEc8)
+
+
 
