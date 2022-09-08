@@ -174,3 +174,9 @@ Cloud Computing Service models:
 * MaaS: All the cloud principles apply to the physical hardware (GPU programming or Large storage systems)
 * Serverless: eg AWS Lambda.
 
+Cloud computing:
+* Near infinite computing
+* Elimination of upfront cost
+* Paying for what you use
+* Comperative advandage: You focus on things you are good at, leaving the rest to others.
+* 
