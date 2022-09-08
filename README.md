@@ -196,8 +196,17 @@ Links and Resources
 * https://aws.amazon.com/cloudshell/
 * https://cloud.google.com/shell/
 * https://docs.microsoft.com/en-us/azure/cloud-shell/overview
+* https://learning.oreilly.com/library/view/python-for-devops/9781492057680/ch07.html
+* https://www.google.com/docs/about/
+* https://www.office.com/
+* https://www.heroku.com
+* https://aws.amazon.com/lambda/
+* https://github.com/noahgift/delivery
+* https://github.com/noahgift/gcp-hello-ml
 * [Brief introduction... what is cloud computing](https://www.youtube.com/watch?v=KDWkY0srFpg)
 * [Brief introduction to cloud economics](https://www.youtube.com/watch?v=22mtNlfGEc8)
+* [Brief intro to cloud computing service models](https://www.youtube.com/watch?v=7lgy7Cnt72c)
+* [Setup Continuous Delivery on GCP Platform with Google App Engine and Cloud Build](https://www.youtube.com/watch?v=_TfWdOvQXwU)
 
 
 
