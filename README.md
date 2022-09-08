@@ -179,4 +179,12 @@ Cloud computing:
 * Elimination of upfront cost
 * Paying for what you use
 * Comperative advandage: You focus on things you are good at, leaving the rest to others.
-* 
+
+Links and Resources
+
+* https://aws.amazon.com/cloud9/
+* https://aws.amazon.com/cloudshell/
+* https://cloud.google.com/shell/
+* https://docs.microsoft.com/en-us/azure/cloud-shell/overview
+* [Brief introduction... what is cloud computing](https://www.youtube.com/watch?v=KDWkY0srFpg)
+
