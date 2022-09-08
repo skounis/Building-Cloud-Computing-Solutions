@@ -168,11 +168,11 @@ gcloud app deploy
 
 Cloud Computing Service models:
 
-* SaaS
-* PaaS: Highlevel abstraction. The team focus only on the logic of the application
-* IaaS: Get things in bulk. You still need to configure everything
+* SaaS: (e.g. Gmail, Splunk, Datadog)
+* PaaS: Highlevel abstraction of the infrastructure. The team focus only on the logic of the application. (e.g. Heroku, GAE, Beanstalk ...)
+* IaaS: Get things in bulk. You still need to configure everything. (e.g. AWS EC2)
 * MaaS: All the cloud principles apply to the physical hardware (GPU programming or Large storage systems)
-* Serverless: eg AWS Lambda.
+* Serverless (FaaS): eg AWS Lambda.
 
 Cloud computing:
 * Near infinite computing
