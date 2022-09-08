@@ -162,3 +162,15 @@ gcloud app deploy
     - Enable "App Engine": You can do deploys for me
     - Enable "Service Accounts": Do this on my behalf.
 4. Make a commit to `master`
+
+
+## Week IV
+
+Cloud Computing Service models:
+
+* SaaS
+* PaaS: Highlevel abstraction. The team focus only on the logic of the application
+* IaaS: Get things in bulk. You still need to configure everything
+* MaaS: All the cloud principles apply to the physical hardware (GPU programming or Large storage systems)
+* Serverless: eg AWS Lambda.
+
