@@ -204,6 +204,9 @@ Links and Resources
 * https://github.com/noahgift/delivery
 * https://github.com/noahgift/gcp-hello-ml
 * https://cloud.google.com/appengine/docs/standard/python3/quickstart
+* https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories
+* https://console.cloud.google.com/cloud-build/triggers
+* https://cloud.google.com/cloud-build/docs/create-github-app-triggers
 * https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/appengine/standard_python37/hello_world
 * [Brief introduction... what is cloud computing](https://www.youtube.com/watch?v=KDWkY0srFpg)
 * [Brief introduction to cloud economics](https://www.youtube.com/watch?v=22mtNlfGEc8)
