@@ -203,6 +203,8 @@ Links and Resources
 * https://aws.amazon.com/lambda/
 * https://github.com/noahgift/delivery
 * https://github.com/noahgift/gcp-hello-ml
+* https://cloud.google.com/appengine/docs/standard/python3/quickstart
+* https://github.com/GoogleCloudPlatform/python-docs-samples/tree/master/appengine/standard_python37/hello_world
 * [Brief introduction... what is cloud computing](https://www.youtube.com/watch?v=KDWkY0srFpg)
 * [Brief introduction to cloud economics](https://www.youtube.com/watch?v=22mtNlfGEc8)
 * [Brief intro to cloud computing service models](https://www.youtube.com/watch?v=7lgy7Cnt72c)
