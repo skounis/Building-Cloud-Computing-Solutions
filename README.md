@@ -221,4 +221,12 @@ Links and Resources
 ...
 
 #### EC2 
+1. Create a `.pem` file and upload it to the Cloud9 environment
+2. Create an EC2 Security Group
+3. Install `httpd`
+```bash
+ sudo yum update -y
+ sudo yum install -y httpd
+ sudo systemctl start httpd
+ ```
 
