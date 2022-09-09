@@ -166,7 +166,7 @@ gcloud app deploy
 
 ## Week IV
 
-Cloud Computing Service models:
+### Cloud Computing Service models:
 
 * SaaS: (e.g. Gmail, Splunk, Datadog)
 * PaaS: Highlevel abstraction of the infrastructure. The team focus only on the logic of the application. (e.g. Heroku, GAE, Beanstalk ...)
@@ -213,5 +213,9 @@ Links and Resources
 * [Brief intro to cloud computing service models](https://www.youtube.com/watch?v=7lgy7Cnt72c)
 * [Setup Continuous Delivery on GCP Platform with Google App Engine and Cloud Build](https://www.youtube.com/watch?v=_TfWdOvQXwU)
 
+### Websites
+#### S3
+...
 
+#### AWS Lambda
 
