@@ -243,3 +243,8 @@ The created files within the `html` folder inherit the permissions from the pare
 #### Elastic Beanstalk
 1. Install the [CLI tools on a Cloud9 environment](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html)
 2. Use the install scripts from GitHub https://github.com/aws/aws-elastic-beanstalk-cli-setup
+
+Add `eb` in the path
+```bash
+echo 'export PATH="/home/ec2-user/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile
+```
