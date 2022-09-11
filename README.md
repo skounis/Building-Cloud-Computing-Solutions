@@ -263,5 +263,11 @@ touch application.py
 # https://github.com/noahgift/Flask-Elastic-Beanstalk
 #
 # Run localy
-python applictiona.py
+python appliction.py
+```
+
+Test the app
+```bash
+curl http://127.0.0.1:5000
+curl http://127.0.0.1:5000/echo/foo
 ```
