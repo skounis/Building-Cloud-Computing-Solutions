@@ -315,3 +315,12 @@ We focus on solving the business problems instead security, network etc that are
 
 #### Total Cost of Ownership
 Invest in our own data center will be more expensive in the **long term** (e.g. having the people for maintaining and running it)
+
+#### Operational resilience
+How do we perform in a crisis? When for example, a natural disaster destroys our only data center. A cloud provider has more resources, and we inherit their resilience.  
+Our application is designed to take advantage of it.
+
+#### Business agility
+> Ride with the wave, not against it. 
+
+We leverage the cloud resources that are constantly being developed and focus on our business expertise. As a result, we develop features at a much faster pace. We do not spend resources on what other people are already doing in a much better way. 
