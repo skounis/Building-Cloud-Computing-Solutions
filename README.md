@@ -324,3 +324,6 @@ Our application is designed to take advantage of it.
 > Ride with the wave, not against it. 
 
 We leverage the cloud resources that are constantly being developed and focus on our business expertise. As a result, we develop features at a much faster pace. We do not spend resources on what other people are already doing in a much better way. 
+
+#### Hands on
+* https://github.com/skounis/cdf-flask-elastic-beanstalk/blob/main/README.md
