@@ -258,4 +258,10 @@ python3 -m venv virt
 source virt/bin/activate
 pip install flask==1.0.2
 pip freeze > requirements.txt
+touch application.py
+# Get source from 
+# https://github.com/noahgift/Flask-Elastic-Beanstalk
+#
+# Run localy
+python applictiona.py
 ```
