@@ -278,7 +278,15 @@ Ignore
 touch .ebignore
 echo "virt" >> .ebignore 
 ```
+
 Create an EB environmet
 ```bash
-eb init -p python-3.7 flash-cloud-data
+eb init -p python-3.7 flask-cloud-data
+eb create flask-cloud-dataenv
 ```
+
+Terminate the EB environment
+```bash
+ eb terminate
+ ```
+
