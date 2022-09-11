@@ -271,3 +271,14 @@ Test the app
 curl http://127.0.0.1:5000
 curl http://127.0.0.1:5000/echo/foo
 ```
+
+##### Deploy EB
+Ignore
+```bash
+touch .ebignore
+echo "virt" >> .ebignore 
+```
+Create an EB environmet
+```bash
+eb init -p python-3.7 flash-cloud-data
+```
