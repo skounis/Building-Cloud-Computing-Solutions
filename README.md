@@ -301,4 +301,5 @@ Key terms
 * Business agility: We focus on our business goals 
 
 #### Elasticity
-When trafic goes up, automatically deploy more virtual machines so they handle it. Trafic goes down, remove the additional virtual machines and reduce the overal cost. 
+When traffic goes up, automatically deploy more virtual machines so they handle it. Traffic goes down, remove the additional virtual machines and reduce the overall cost. 
+> More traffic: Scale up, Less traffic: Scale down
