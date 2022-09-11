@@ -248,3 +248,14 @@ Add `eb` in the path
 ```bash
 echo 'export PATH="/home/ec2-user/.ebcli-virtual-env/executables:$PATH"' >> ~/.bash_profile && source ~/.bash_profile
 ```
+
+Create a flask app
+```bash
+mkdir eb-flask
+cd eb-flask
+# Create Virtual ENV withing the app folder (see comments below)
+python3 -m venv virt
+source virt/bin/activate
+pip install flask==1.0.2
+pip freeze > requirements.txt
+```
