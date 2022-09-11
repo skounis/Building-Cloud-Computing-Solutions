@@ -303,3 +303,15 @@ Key terms
 #### Elasticity
 When traffic goes up, automatically deploy more virtual machines so they handle it. Traffic goes down, remove the additional virtual machines and reduce the overall cost. 
 > More traffic: Scale up, Less traffic: Scale down
+
+#### Availability
+Is the website 99.9999 reliable? We use services that are designed to be available. We do not need to build this infrastructure
+
+#### Self-Service
+Work around the IT Procurement. 
+
+#### Reduced complexity
+We focus on solving the business problems instead security, network etc that are handeld by the Cloud vendors with significant better experience.
+
+#### Total Cost of Ownership
+Invest in our own data center will be more expensive in the **long term** (e.g. having the people for maintaining and running it)
