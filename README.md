@@ -327,3 +327,32 @@ We leverage the cloud resources that are constantly being developed and focus on
 
 #### Hands on
 * https://github.com/skounis/cdf-flask-elastic-beanstalk/blob/main/README.md
+
+
+
+## Week V
+DevOps key terms
+* Continuous Integration: Automated testing process
+* Continuous Deliver: Code always in deployable state
+* Microservices: Smaller version of an application focus on one particular purpose
+* Infrastructure as Code (IaC)
+* Monitoring and Logging: There is instrumentation in place.
+* Communication and Collaboration
+
+### DevOps
+> Replacing siloed Development and Operations to create multidisciplinary teams that now work together with shared and efficient practices
+and tools
+* Agile planning
+* CI/CD
+* Monitoring
+
+#### Cylce Time 
+> OODA Loop
+> Observe, Orient, Decide, Act (repeat) 
+1. You start with observation of business, market, needs, current user behavior, and available telemetry data.
+2. Then you orient with the enumeration of options for what you can deliver, perhaps with experiments. 
+3. Next you decide what to pursue, and you act by delivering working software to real users. 
+
+All of this occurs in some cycle time.
+> The feedback that you gather with each cycle should be real, actionable data. This is called *validated learning*.
+
