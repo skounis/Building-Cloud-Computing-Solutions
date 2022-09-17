@@ -467,6 +467,10 @@ Global options (use these before the subcommand, if any):
   -help         Show this help output, or the help for a specified subcommand.
   -version      An alias for the "version" subcommand.
 ```
+Get available zones 
+```bash
+gcloud compute zones list | grep us-west
+```
 
 Create a configuration file `instance.tf`
 ```bash
@@ -525,6 +529,108 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
+Verify the configuration.
+```bash
+terraform plan
+```
+
+Output
+```text
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # google_compute_instance.default will be created
+  + resource "google_compute_instance" "default" {
+      + can_ip_forward       = false
+      + cpu_platform         = (known after apply)
+      + current_status       = (known after apply)
+      + deletion_protection  = false
+      + guest_accelerator    = (known after apply)
+      + id                   = (known after apply)
+      + instance_id          = (known after apply)
+      + label_fingerprint    = (known after apply)
+      + machine_type         = "n1-standard-1"
+      + metadata_fingerprint = (known after apply)
+      + min_cpu_platform     = (known after apply)
+      + name                 = "terraform"
+      + project              = "cdf-cloud-data-cd"
+      + self_link            = (known after apply)
+      + tags_fingerprint     = (known after apply)
+      + zone                 = "us-central-a"
+
+      + boot_disk {
+          + auto_delete                = true
+          + device_name                = (known after apply)
+          + disk_encryption_key_sha256 = (known after apply)
+          + kms_key_self_link          = (known after apply)
+          + mode                       = "READ_WRITE"
+          + source                     = (known after apply)
+
+          + initialize_params {
+              + image  = "debian-cloud/debian-9"
+              + labels = (known after apply)
+              + size   = (known after apply)
+              + type   = (known after apply)
+            }
+        }
+
+      + confidential_instance_config {
+          + enable_confidential_compute = (known after apply)
+        }
+
+      + network_interface {
+          + ipv6_access_type   = (known after apply)
+          + name               = (known after apply)
+          + network            = "default"
+          + network_ip         = (known after apply)
+          + stack_type         = (known after apply)
+          + subnetwork         = (known after apply)
+          + subnetwork_project = (known after apply)
+
+          + access_config {
+              + nat_ip       = (known after apply)
+              + network_tier = (known after apply)
+            }
+        }
+
+      + reservation_affinity {
+          + type = (known after apply)
+
+          + specific_reservation {
+              + key    = (known after apply)
+              + values = (known after apply)
+            }
+        }
+
+      + scheduling {
+          + automatic_restart           = (known after apply)
+          + instance_termination_action = (known after apply)
+          + min_node_cpus               = (known after apply)
+          + on_host_maintenance         = (known after apply)
+          + preemptible                 = (known after apply)
+          + provisioning_model          = (known after apply)
+
+          + node_affinities {
+              + key      = (known after apply)
+              + operator = (known after apply)
+              + values   = (known after apply)
+            }
+        }
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run "terraform apply" now.
+```
+
+Accept and apply the changes
+```bash
+terraform apply
+```
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
 2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
