@@ -374,6 +374,21 @@ All of this occurs in some cycle time.
 ### DevOps in Real World
 > There's a simple heuristic, either on a daily basis you're getting better or you're getting worse. **If you don't know which one, you're probably getting worse**.
 
+### DevOps Benefits
+DevOps: A practice that improves the velocity of the team
+1. Spead the software gets to the customers 
+2. Delivery: Deliver features and bug fixes faster
+3. Reliability: Automated test, monitoring, loging makes systems much more reliable.
+4. Scale: IaS and Microservices, the smaller you make something the easier to scale.
+5. Collaboration: Shared ownership, Production management, Development and Operations work together.
+6. Decurity: Leaking data, sharing data accidentantaly. DevOps increase the lever of security
+
+### DevOps Best Practices
+1. Continuous Integration: Automaticaly testing bugs, improve the quality, reduce the time for validating and releasing.
+2. Continuous Deliver: Code ready for realease into production. An extension of the CI.
+3. Microservices: Critical component. Small services that communicate with each other with a queuieing syste or othe interface.
+4. Infrastructure as Code (IaC): Enables the CI/CD
+
 
 
 Links and Resource
@@ -383,6 +398,7 @@ Links and Resource
 4. [Microsoft Learn: What is Scrum](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
 5. [Microsoft Learn: Scaling Agine to large teams](https://learn.microsoft.com/en-us/devops/plan/scaling-agile)
 6. [Microsoft Learn: What is monitoring?](https://learn.microsoft.com/en-us/devops/operate/what-is-monitoring)
-7. [The Agine Manifesto](http://agilemanifesto.org/)
-8. [Scrum is the most common Agile framework](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
-9. [Cowboy coding](https://en.wikipedia.org/wiki/Cowboy_coding)
+7. [Microsoft Learn: What is Infrastructure as Code (IaC)](https://learn.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)
+8. [The Agine Manifesto](http://agilemanifesto.org/)
+9. [Scrum is the most common Agile framework](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
+10. [Cowboy coding](https://en.wikipedia.org/wiki/Cowboy_coding)
