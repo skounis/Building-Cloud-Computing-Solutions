@@ -358,3 +358,19 @@ All of this occurs in some cycle time.
 
 > How long does it take you to deploy a change of one line of code or configuration? Ultimately, that's the **brake on your velocity**
 
+> "Plans are worthless, but planning is everything." — Dwight D. Eisenhower
+
+> "Everything has dramatically changed. Sustainability, besides green and clean, means that what we build today has to be easily and quickly changed tomorrow. Strategic plans are short-term, and planning and change are continuous." — Diego Lo Guidice, Forrester
+
+##### Done 
+> Are you done programming, creating test data, actually testing, ensuring it’s deployable, documenting…
+
+Links and Resource
+1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
+2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
+3. [Microsoft Learn: What is Agile](https://learn.microsoft.com/en-us/devops/plan/what-is-agile)
+4. [Microsoft Learn: What is Scrum](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
+5. [Microsoft Learn: What is monitoring?](https://learn.microsoft.com/en-us/devops/operate/what-is-monitoring)
+6. [The Agine Manifesto](http://agilemanifesto.org/)
+7. [Scrum is the most common Agile framework](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
+8. [Cowboy coding](https://en.wikipedia.org/wiki/Cowboy_coding)
