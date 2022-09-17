@@ -371,10 +371,10 @@ All of this occurs in some cycle time.
 3. Plan: 3 sprints
 4. Sprint: 3 weeks
 
-### DevOps in Real World
+#### DevOps in Real World
 > There's a simple heuristic, either on a daily basis you're getting better or you're getting worse. **If you don't know which one, you're probably getting worse**.
 
-### DevOps Benefits
+#### DevOps Benefits
 DevOps: A practice that improves the velocity of the team
 1. Spead the software gets to the customers 
 2. Delivery: Deliver features and bug fixes faster
@@ -383,7 +383,7 @@ DevOps: A practice that improves the velocity of the team
 5. Collaboration: Shared ownership, Production management, Development and Operations work together.
 6. Decurity: Leaking data, sharing data accidentantaly. DevOps increase the lever of security
 
-### DevOps Best Practices
+#### DevOps Best Practices
 1. Continuous Integration: Automaticaly testing bugs, improve the quality, reduce the time for validating and releasing.
 2. Continuous Deliver: Code ready for realease into production. An extension of the CI.
 3. Microservices: Critical component. Small services that communicate with each other with a queuieing syste or othe interface.
@@ -391,7 +391,19 @@ DevOps: A practice that improves the velocity of the team
 5. Monitoring and Logging: Look at the metrics (CPU, Memory, I/O load). Look at the data and make decisions. 
 6. Communication and Collaboration: 
 
+### Utilize IaC
+Manage Cloud Infrastructure. Key terms:
+* Infrastructure as Code (IaC): Code that deployes and Infrastructure
+* Terraform: A popular IaC
+* Environment Drift: IaC stops environments from drifting and changing
+* Snowflake Environment: An example when we do not use IaC, automation. A non reproducible environment
 
+#### What is IaC
+The management of network, virtual machines, load balancers, connection topology in a descriptive model. 
+
+The same IaC model generates the same environment every time it is applied. 
+
+Teams who implement IaC can deliver stable environments rapidly and at scale. Teams avoid manual configuration of environments and enforce consistency by representing the desired state of their environments via code. Infrastructure deployments with IaC are repeatable and prevent runtime issues caused by configuration drift or missing dependencies (see [Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview))
 
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
@@ -404,3 +416,5 @@ Links and Resource
 8. [The Agine Manifesto](http://agilemanifesto.org/)
 9. [Scrum is the most common Agile framework](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
 10. [Cowboy coding](https://en.wikipedia.org/wiki/Cowboy_coding)
+11. [What is configuration drift](https://coder.com/blog/what-is-configuration-drift)
+12. [Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
