@@ -365,12 +365,21 @@ All of this occurs in some cycle time.
 ##### Done 
 > Are you done programming, creating test data, actually testing, ensuring it’s deployable, documenting…
 
+#### Agile Planing
+1. Vision: 18 months
+2. Season: 6 months (Is described through features and sets the strategy for the next period)
+3. Plan: 3 sprints
+4. Sprint: 3 weeks
+
+
+
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
 2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
 3. [Microsoft Learn: What is Agile](https://learn.microsoft.com/en-us/devops/plan/what-is-agile)
 4. [Microsoft Learn: What is Scrum](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
-5. [Microsoft Learn: What is monitoring?](https://learn.microsoft.com/en-us/devops/operate/what-is-monitoring)
-6. [The Agine Manifesto](http://agilemanifesto.org/)
-7. [Scrum is the most common Agile framework](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
-8. [Cowboy coding](https://en.wikipedia.org/wiki/Cowboy_coding)
+5. [Microsoft Learn: Scaling Agine to large teams](https://learn.microsoft.com/en-us/devops/plan/scaling-agile)
+6. [Microsoft Learn: What is monitoring?](https://learn.microsoft.com/en-us/devops/operate/what-is-monitoring)
+7. [The Agine Manifesto](http://agilemanifesto.org/)
+8. [Scrum is the most common Agile framework](https://learn.microsoft.com/en-us/devops/plan/what-is-scrum)
+9. [Cowboy coding](https://en.wikipedia.org/wiki/Cowboy_coding)
