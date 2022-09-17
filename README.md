@@ -354,7 +354,7 @@ and tools
 3. Next you decide what to pursue, and you act by delivering working software to real users. 
 
 All of this occurs in some cycle time.
-> The feedback that you gather with each cycle should be real, actionable data. This is called *validated learning*.
+> The feedback that you gather with each cycle should be real, actionable data. This is called **validated learning**.
 
-> How long does it take you to deploy a change of one line of code or configuration? Ultimately, that's the *brake on your velocity*
+> How long does it take you to deploy a change of one line of code or configuration? Ultimately, that's the **brake on your velocity**
 
