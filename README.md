@@ -356,3 +356,5 @@ and tools
 All of this occurs in some cycle time.
 > The feedback that you gather with each cycle should be real, actionable data. This is called *validated learning*.
 
+> How long does it take you to deploy a change of one line of code or configuration? Ultimately, that's the *brake on your velocity*.
+
