@@ -422,6 +422,7 @@ You can build the entire company infrastructure from scratch or in a disaster. I
 
 
 #### GCP: Launch a VM with Terraform
+Confirm `terraform` is available/installed
 ```bash
 terraform
 ```
@@ -465,6 +466,38 @@ Global options (use these before the subcommand, if any):
                 given subcommand.
   -help         Show this help output, or the help for a specified subcommand.
   -version      An alias for the "version" subcommand.
+```
+
+Create a configuration file `instance.tf`
+```bash
+touch instance.tf
+```
+Open it in the Editor and add.
+```txt
+resource "google_compute_instance" "default" {
+    project         = "cdf-cloud-data-cd"
+    name            = "terraform"
+    machine_type    = "n1-standard-1"
+    zone            = "us-central-a"
+
+    boot_disk {
+        initialize_params {
+          image = "debian-cloud/debian-9"
+        }
+    }
+
+    network_interface {
+      network = "default"
+      access_config {
+
+      }
+    }
+}
+```
+
+Init Terraform
+```bash
+terraform init
 ```
 
 
