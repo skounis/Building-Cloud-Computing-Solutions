@@ -388,6 +388,8 @@ DevOps: A practice that improves the velocity of the team
 2. Continuous Deliver: Code ready for realease into production. An extension of the CI.
 3. Microservices: Critical component. Small services that communicate with each other with a queuieing syste or othe interface.
 4. Infrastructure as Code (IaC): Enables the CI/CD
+5. Monitoring and Logging: Look at the metrics (CPU, Memory, I/O load). Look at the data and make decisions. 
+6. Communication and Collaboration: 
 
 
 
