@@ -371,6 +371,9 @@ All of this occurs in some cycle time.
 3. Plan: 3 sprints
 4. Sprint: 3 weeks
 
+### DevOps in Real World
+> There's a simple heuristic, either on a daily basis you're getting better or you're getting worse. **If you don't know which one, you're probably getting worse**.
+
 
 
 Links and Resource
