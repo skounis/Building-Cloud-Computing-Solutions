@@ -640,6 +640,7 @@ Build the platform
 ```bash
 terraform init
 terraform plan
+terraform apply
 ```
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
