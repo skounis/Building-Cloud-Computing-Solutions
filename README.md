@@ -632,6 +632,15 @@ Accept and apply the changes
 ```bash
 terraform apply
 ```
+
+#### Azure: Launch a VM with Terraform
+Use the [instance.tf](https://github.com/skounis/Cloud-Computing-Foundations/blob/main/azure/instance.tf) file and run
+
+Build the platform
+```bash
+terraform init
+terraform plan
+```
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
 2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
