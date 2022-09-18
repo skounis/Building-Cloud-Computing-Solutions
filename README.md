@@ -661,6 +661,9 @@ terraform plan -destroy -out main.destroy.tfplan
 terraform apply "main.destroy.tfplan"
 ```
 
+> See a more detailed terraform example for Azure 
+> * https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-terraform
+
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
 2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
