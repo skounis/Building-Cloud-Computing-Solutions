@@ -778,6 +778,27 @@ hugo
 hugo deploy
 ```
 
+##### Auto deploy in S3
+1. Put the [Hugo site under version control](https://github.com/skounis/cdf-hugo-s3)
+2. Setup [CodeBuild](https://eu-west-1.console.aws.amazon.com/codesuite/codebuild/projects?region=eu-west-1)
+    - Stay in the same region with the S3 Bucket
+3. Create a new project
+    - Source provider: GitHub
+    - Authorize with OAuth
+    - Select "Repository in my GitHub account"
+    - Set the repo URL, e.g. https://github.com/skounis/cdf-hugo-s3.git
+    - Enable the Webhook "Rebuild every time a code change is pushed to this repository"
+    - Select "Managed image" env, "Amazon Linux 2" operating system and "Standard" runtime
+4. Keep note of the Service role, e.g., `codebuild-hugo-s3-service-role`
+
+Prepare the privileges
+1. In the Build Details tab locate the "Service role" and click on it. 
+2. Attach the policies
+    - AdministratorAccess
+3. Prepare the IaC [buildspec.yml](https://github.com/skounis/cdf-hugo-s3/blob/main/buildspec.yml) file
+4. Make a change e.g. in a post and commit push. This will trigger the "CodeBuild"
+
+
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
 2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
