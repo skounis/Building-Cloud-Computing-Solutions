@@ -467,9 +467,10 @@ Global options (use these before the subcommand, if any):
   -help         Show this help output, or the help for a specified subcommand.
   -version      An alias for the "version" subcommand.
 ```
-Get available zones 
+Get available zones and instances
 ```bash
 gcloud compute zones list | grep us-west
+gcloud compute images list | grep debian
 ```
 
 Create a configuration file `instance.tf`
@@ -482,13 +483,13 @@ resource "google_compute_instance" "default" {
     project         = "cdf-cloud-data-cd"
     name            = "terraform"
     machine_type    = "n1-standard-1"
-    zone            = "us-central-a"
+    zone            = "us-west1-a"
 
     boot_disk {
         initialize_params {
-          image = "debian-cloud/debian-9"
+          image = "debian-cloud/debian-10"
         }
-    }
+    }  
 
     network_interface {
       network = "default"
