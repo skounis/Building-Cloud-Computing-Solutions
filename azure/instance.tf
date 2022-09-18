@@ -137,16 +137,16 @@ resource "azurerm_linux_virtual_machine" "myterraformvm" {
     computer_name = "myvm"
     admin_username = "azureuser"
     disable_password_authentication = true
+
     admin_ssh_key {
-        admin_ssh_key {
-            username = "azureuser"
-            public_key = tls_private_key.example_ssh.public_key_openssh
-        }
-        boot_diagnostics {
-            storage_account_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
-        }
-        tags = {
-            environment = "Terraform Demo"
-        }
+        username = "azureuser"
+        public_key = tls_private_key.example_ssh.public_key_openssh
     }
+    boot_diagnostics {
+        storage_account_uri = azurerm_storage_account.mystorageaccount.primary_blob_endpoint
+    }
+    tags = {
+        environment = "Terraform Demo"
+    }
+
 }
