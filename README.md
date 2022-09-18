@@ -738,8 +738,45 @@ Make the Hugo port available
 4. Start hugo with `hugo serve --bind=0.0.0.0 --port=8080 --baseURL=http://<ip address>`
 
 
+##### Deploy site in S3
+1. Create a new S3 bucket, e.g., `cdf-hugo`
+    1. Do NOT block all public access
+    2. Enable Static Hosting Website 
+    3. Set `index.html` as the index document
+2. Create a bucket policy that makes everything publicly available
 
+Public Access Policy
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::cdf-hugo/*"
+        }
+    ]
+}
+```
 
+Link the S3 bucker `config.toml`
+
+```
+[[deployment.targets]]
+# An arbitray name for this target.
+name = "awsbucket"
+URL = "s3://cdf-hugo?region=eu-west-1"
+```
+
+```bash
+# Build locally 
+hugo
+
+# Deploy to S3
+hugo deploy
+```
 
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
