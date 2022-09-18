@@ -642,6 +642,25 @@ terraform init
 terraform plan
 terraform apply
 ```
+
+SSH into the VM
+```bash
+# Get the public IP
+az vm show --resource-group myResourceGroup --name myVM -d --query [publicIps] -o ts
+# Get the private key
+terraform output -raw tls_private_key > id_rsa_vm
+# Set permissions
+chmod 0600 id_rsa_vm
+## SSH
+ssh -i id_rsa_vm azureuser@<public ip address>
+```
+
+Destroy the resources
+```bash
+terraform plan -destroy -out main.destroy.tfplan
+terraform apply "main.destroy.tfplan"
+```
+
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
 2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
