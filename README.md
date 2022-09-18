@@ -798,6 +798,9 @@ Prepare the privileges
 3. Prepare the IaC [buildspec.yml](https://github.com/skounis/cdf-hugo-s3/blob/main/buildspec.yml) file
 4. Make a change e.g. in a post and commit push. This will trigger the "CodeBuild"
 
+See example in 
+* https://github.com/noahgift/hugoforduke17
+
 
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
