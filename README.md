@@ -664,6 +664,37 @@ terraform apply "main.destroy.tfplan"
 > See a more detailed terraform example for Azure 
 > * https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-terraform
 
+
+### Continuous Pipelines
+Key terms
+* Flask: Microservice web framework in Python
+* Hugo: Static hosted website techology in GO (speed) 
+* AWS Code Pipeline: CI/CD system for AWS
+* Static Websites
+
+#### Continuous Deliver
+* Source code automatically checked, linted and verified over a staging env. 
+* You continuously make things better. 
+* Continuous improvement process also known as Kaizen
+
+#### A deep dive
+* Test the code automatically
+* Infrastructure that deployes over and over again automatically
+* Developers just push into GitHub. The build server does the rest.
+   * Build 
+   * Test 
+   * Lint
+   * Prepare the infrastructure (IoC) (optionally)
+   * Deploy
+* The code is always in a deployment state
+
+#### A Flask Example in Azure with Gateways
+* Azure Pipeline Service: https://dev.azure.com/
+
+Quality Controll Gates
+* Lint
+* Test
+
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
 2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
