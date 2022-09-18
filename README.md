@@ -695,6 +695,52 @@ Quality Controll Gates
 * Lint
 * Test
 
+
+#### Hugo in AWS with Cloud9
+##### Setup Cloud9:
+Download the latest Hugo release e.g. [hugo_0.103.1_Linux-64bit.tar.gz](https://github.com/gohugoio/hugo/releases/tag/v0.103.1)
+
+```bash
+tar zxf hugo_0.103.1_Linux-64bit.tar.gz
+mkdir -p ~/bin
+mv hugo ~/bin/
+
+# Test hugo
+which hugo
+hugo version
+```
+##### Create a Hugo website
+```bash
+hugo new site cdf-hugo
+cd cdf-hugo/
+git init
+git branch -m main
+```
+
+Prepare  a git submodule for the theme
+```bash
+# Clone the theme as a submodule
+git submodule add git@github.com:theNewDynamic/gohugo-theme-ananke.git themes/ananke
+
+# Enable the theme
+echo 'theme= "ananke"' >> config.toml
+```
+
+Create new post
+```bash
+hugo new posts/my-first-post.md
+```
+
+Make the Hugo port available
+1. Edit the inbound rules for the Cloud9 EC2 security group
+2. Add a `Custom TCP` rule for port `8080` with mask `0.0.0.0/0`
+3. Locate my IP address with `curl ipinfo.io` 
+4. Start hugo with `hugo serve --bind=0.0.0.0 --port=8080 --baseURL=http://<ip address>`
+
+
+
+
+
 Links and Resource
 1. [Speeding Up Innovation: What I learned from Netflix](https://www.slideshare.net/adriancockcroft/speeding-up-31799721)
 2. [Microsoft Learn: What is continuous deliver?](https://learn.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery)
@@ -708,3 +754,10 @@ Links and Resource
 10. [Cowboy coding](https://en.wikipedia.org/wiki/Cowboy_coding)
 11. [What is configuration drift](https://coder.com/blog/what-is-configuration-drift)
 12. [Azure Resource Manager](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview)
+13. [Brief intro into what is IAC (video)](https://www.youtube.com/watch?v=rfZWRpN6Da4)
+14. [Infrastructure as code in the real world (video)](https://www.youtube.com/watch?v=nrCYVyBuOIw)
+15. [Launch a vm with Terraform in GCP (video)](https://www.youtube.com/watch?v=mh4qf0MS0F4)
+16. [Hugo](https://gohugo.io/)
+17. [AWS CodePipeline](https://aws.amazon.com/codepipeline/)
+18. [Hugo continuous deliver with AWS - Video Tutorial](https://www.youtube.com/watch?v=xiodvLdPnvI)
+
