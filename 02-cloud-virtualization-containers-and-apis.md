@@ -29,3 +29,26 @@
     * EKD: Container platform on AWS (Kubernetes environment)
 
 ## Week II
+### Virtual Machines
+* Containers vs VMs
+* Spot Instances
+* GCP VM
+
+#### Objects
+* Evaluate virtualization abstractions
+* Build solutions with VMs
+
+#### Key terms
+* Container
+    * Cloud native applications
+    * DevOps best practices
+    * Includer runtime with code
+    * Launch time in miliseconds 
+* Virual Machines
+    * Used for monolithic applications
+    * Run OS inside of another OS
+    * Launch time from seconds to minutes
+* Docker format container
+    * Flat file with instructions / directives
+    * Can live inside the source countrol
+    * Launch time from seconds to minutes
