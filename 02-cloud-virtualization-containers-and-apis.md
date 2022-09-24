@@ -64,3 +64,9 @@
 * Key difference: Portability
 
 > [Red Hat on Containers vs VMs](https://www.redhat.com/en/topics/containers/containers-vs-vms)
+> The caveat is that containers have to be compatible with the underlying OS.
+> Compared to VMs, containers are best used to: 
+> * Build cloud-native apps
+> * Package microservices
+> * Instill DevOps or CI/CD practices
+> * Move scalable IT projects across a diverse IT footprint that shares the same OS
