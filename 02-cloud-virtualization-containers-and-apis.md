@@ -22,4 +22,10 @@
 * IT Infrastructure 
 * JSON and YAML
 
+### Project
+* Containarized Flash Microservice
+* Managed container service
+    * Cloud run: Fully managed container service on GCP
+    * EKD: Container platform on AWS (Kubernetes environment)
 
+## Week II
