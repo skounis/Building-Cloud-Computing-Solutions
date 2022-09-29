@@ -80,5 +80,12 @@ shown in this diagram](https://learn.microsoft.com/en-us/virtualization/windowsc
 The following table shows some of the similarities and differences of these complementary technologies.
 * https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/containers-vs-vm#containers-vs-virtual-machines-1
 
+
+#### Spot Instance
+* Launch by API or Web Console 
+* You bid what price you'd like to pay. 
+* It saves up to 90% off.
+
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
