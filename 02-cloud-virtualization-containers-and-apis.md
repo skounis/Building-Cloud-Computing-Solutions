@@ -110,5 +110,14 @@ ps auxw | grep nginx
 
 Create a GCP VM following the [Quicklags interactive tutorial](https://www.qwiklabs.com/focuses/3563?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7996439)
 
+Common commands
+```bash
+gcloud auth list
+gcloud config list project
+gcloud compute instances create gcelab2 --machine-type e2-medium --zone 
+gcloud compute instances create --help
+gcloud compute ssh gcelab2 --zone  
+```
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
