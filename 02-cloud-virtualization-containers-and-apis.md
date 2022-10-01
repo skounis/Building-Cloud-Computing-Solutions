@@ -159,6 +159,23 @@ Docker: Docker Desktop and Docker Hub.
 > Leverage the power of an expert developer in a runtime. 
 
 #### Run a container
+Example
+* https://hub.docker.com/r/jupyter/datascience-notebook
+
+```bash
+docker pull jupyter/datascience-notebook
+```
+
+Open the app (url) and create a new notebook:
+* http://127.0.0.1:10000/lab/tree/Untitled1.ipynb
+
+```python
+import pandas as pd                 
+df = pd.read_csv("https://raw.githubusercontent.com/noahgift/sugar/master/sugar.csv")
+df.describe()
+```
+
+https://raw.githubusercontent.com/noahgift/sugar/master/sugar.csv
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
