@@ -87,5 +87,25 @@ The following table shows some of the similarities and differences of these comp
 * It saves up to 90% off.
 
 
+#### GCP Virtual machine from Termina
+```bash
+gcloud compute instances create gcelabe2 --machine-type n1-standard-2 --zone us-central1-c
+```
+Output
+```
+NAME: gcelabe2
+ZONE: us-central1-c
+MACHINE_TYPE: n1-standard-2
+PREEMPTIBLE:
+INTERNAL_IP: 10.128.0.2
+EXTERNAL_IP: 34.66.119.9
+STATUS: RUNNING
+```
+Install nginx
+```bash
+sudo apt update
+sudo apt install nginx -y
+ps auxw | grep nginx
+```
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
