@@ -123,7 +123,10 @@ gcloud compute ssh gcelab2 --zone
 #### Azure ML Studio
 * https://ml.azure.com/
 
-
+In general, there's 
+* Compute Instance, which is for Jupyter Notebooks. 
+* Compute Clusters, which is for bursting and doing training, 
+* Inference Clusters, which is an optimal environment for doing predictions at scale, not using hosted Kubernetes.
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
