@@ -87,7 +87,7 @@ The following table shows some of the similarities and differences of these comp
 * It saves up to 90% off.
 
 
-#### GCP Virtual machine from Termina
+#### GCP Virtual machine from Terminal
 ```bash
 gcloud compute instances create gcelabe2 --machine-type n1-standard-2 --zone us-central1-c
 ```
@@ -107,5 +107,8 @@ sudo apt update
 sudo apt install nginx -y
 ps auxw | grep nginx
 ```
+
+Create a GCP VM following the [Quicklags interactive tutorial](https://www.qwiklabs.com/focuses/3563?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7996439)
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
