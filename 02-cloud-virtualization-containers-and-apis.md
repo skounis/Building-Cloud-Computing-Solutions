@@ -135,6 +135,31 @@ Containers registries:
 * Docker Hub 
 * Amazon ECR
 
+#### When to use containers
+* Cloud-native environments. The simplest possible way to deploy and application.
+* Microservices. Very efficient and simple way to solve a problem.
+* DevOps. Reproduce the env as well as the source code. Build programmaticaly the container. IaC
+* Job management. Use containers to manage workflows
+* Portability and usability. DevOps and Data Sciences. Inside the source code lives the runtime. 
+
+#### Docker
+Docker: Docker Desktop and Docker Hub. 
+* Docker desktop: 
+    * Local development workflow: Container runtime, tools, application, interface with Kubernetes
+* Docker Hub
+    * Public and private repocitories / registries
+    * Automate the build 
+    * Certify the images
+    * Teams and organizations.
+##### Docker Desktop
+* Use Official images and leverage the existing knowledge. 
+* Build new container localy and push it in the Docker Hub
+* Pull the image and deploy or onboard new developers. 
+
+> Leverage the power of an expert developer in a runtime. 
+
+#### Run a container
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
 * [Quicklags interactive tutorial](https://www.qwiklabs.com/focuses/3563?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7996439)
