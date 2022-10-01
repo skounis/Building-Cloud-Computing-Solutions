@@ -173,6 +173,7 @@ Open the app (url) and create a new notebook:
 import pandas as pd                 
 df = pd.read_csv("https://raw.githubusercontent.com/noahgift/sugar/master/sugar.csv")
 df.describe()
+df.plot()
 ```
 
 https://raw.githubusercontent.com/noahgift/sugar/master/sugar.csv
