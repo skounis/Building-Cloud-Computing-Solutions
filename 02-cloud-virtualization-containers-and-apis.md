@@ -128,5 +128,13 @@ In general, there's
 * Compute Clusters, which is for bursting and doing training, 
 * Inference Clusters, which is an optimal environment for doing predictions at scale, not using hosted Kubernetes.
 
+### Containers
+A powerfull way to package the runtime along with the source code of the project.
+
+Containers registries:
+* Docker Hub 
+* Amazon ECR
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
+* [Quicklags interactive tutorial](https://www.qwiklabs.com/focuses/3563?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7996439)
