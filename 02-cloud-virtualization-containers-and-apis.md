@@ -176,7 +176,63 @@ df.describe()
 df.plot()
 ```
 
-https://raw.githubusercontent.com/noahgift/sugar/master/sugar.csv
+#### Build a Docker container 
+Example 
+* https://github.com/noahgift/container-from-scratch-python
+
+Work in Cloud9
+```bash
+git clone git@github.com:skounis/cdf-container-from-scratch-python.git
+cd cdf-container-from-scratch-python
+
+# Run
+docker run -it noahgift/cloudapp python app.py --name "Big John"
+```
+Runs the `app.py` from the container
+
+##### Build a local container
+```bash
+docker build --tag app .
+# Get the list of images
+docker image ls
+# "app" is listed as the name of the most recently created one
+# Run it
+docker run -it app python app.py --name "Big John"
+```
+
+#### AWS ECR Registry
+Push a container in ECR.
+
+1. Build a container registry is ECR 
+     - Create a new repository in the [Elastic Container Registry ](https://eu-west-1.console.aws.amazon.com/ecr/). e.g. `cdf-container` 
+     - Check out the [sample project](https://github.com/skounis/cdf-container-from-scratch-python) in Cloud9 
+     - Use the shell commands:
+```bash
+# Login
+aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 825556157514.dkr.ecr.eu-west-1.amazonaws.com
+# Build the container
+docker build -t cdf-container .
+# Tag the image 
+docker tag cdf-container:latest 825556157514.dkr.ecr.eu-west-1.amazonaws.com/cdf-container:latest
+# Push to the registry
+docker push 825556157514.dkr.ecr.eu-west-1.amazonaws.com/cdf-container:latest
+```
+
+2. Use the image from ECR
+    - Create a new Cloud9 Env
+    - Login into ECR (use the same command as above)
+    - Pull the container. Use the id of the docker push command above
+
+
+```bash
+# Login
+aws ecr get-login-password --region eu-west-1 | docker login --username AWS --password-stdin 825556157514.dkr.ecr.eu-west-1.amazonaws.com
+# Pull
+docker pull 825556157514.dkr.ecr.eu-west-1.amazonaws.com/cdf-container:latest
+# Run the application 
+docker run -it 825556157514.dkr.ecr.eu-west-1.amazonaws.com/cdf-container:latest python app.py --name "Big John"
+```
+
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
