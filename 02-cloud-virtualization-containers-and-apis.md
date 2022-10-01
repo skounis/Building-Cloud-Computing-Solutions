@@ -119,5 +119,11 @@ gcloud compute instances create --help
 gcloud compute ssh gcelab2 --zone  
 ```
 
+
+#### Azure ML Studio
+* https://ml.azure.com/
+
+
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
