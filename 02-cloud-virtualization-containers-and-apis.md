@@ -238,7 +238,35 @@ With `hadolint`:
 ```bash
 hadolint Dockerfile
 ```
+### Kubernetes
+* Powerfull orchestration service for containers
+* Highly available solutions
 
+Use via
+* Docker Desktop
+* `kubectl` cli
+
+Cloud services
+* Amazon EKS
+* Google Kubernetes Engine GKE
+* Azure Kubernetes Service (AKS)
+
+Keys features
+* High availability architecture
+* Auto-scaling
+* Rich ecosystem
+* Service discovery
+* Container health management
+* Secrets and configuration management
+
+
+Architecture / Hierarchy
+
+* Node
+  * Pod (IP Address)
+    * Container
+
+Master: Orchestrates through API
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
