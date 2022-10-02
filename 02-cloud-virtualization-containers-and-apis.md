@@ -233,6 +233,12 @@ docker pull 825556157514.dkr.ecr.eu-west-1.amazonaws.com/cdf-container:latest
 docker run -it 825556157514.dkr.ecr.eu-west-1.amazonaws.com/cdf-container:latest python app.py --name "Big John"
 ```
 
+#### Dockerfile lint
+With `hadolint`:
+```bash
+hadolint Dockerfile
+```
+
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
