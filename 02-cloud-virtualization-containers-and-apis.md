@@ -289,6 +289,65 @@ Video Tutorials
 * [Demo Application and container](https://github.com/noahgift/container-revolution-devops-microservices)
 
 
+
+
+
+## Week III
+### Microservice 
+* DevOps best practices in Microservices
+* Different types of microservice architectures (e.g. event driven) 
+* Serverless. No need to privision machines or work with their low level details. (AWS Lambda, Google Cloud Functions, Azure Functions). Event Driven and Cloud native.
+
+#### What is a Microservice
+* Small. Does one thing and does it well.
+* Autonomous
+* Specialized. Can do a particular task desinged to gracefully handle errors.
+
+Benefits
+* Speeds ups the development. Small codebase
+* Simplicity 
+* Maps logic into a particular URL. (e.g. a functions that maps to a URL or an event)
+* Reliability 
+
+#### Where do Microservices run
+* Container
+    * Service
+    * Kubernetes
+* Cloud
+    * Functions (Function as a Service, FaaS)
+    * Platforms (Elastic beanstalk, Google App Engine, etc)  
+
+#### Microservices in action
+>  [GitOps: A Path to More Self-service IT](https://queue.acm.org/detail.cfm?id=3237207)
+>
+>  GitOps: empowering users to do their own IT operations via PRs.
+
+> By starting with many manual checks and automating issues only as demand directs your attention, low-value work is discouraged. As stated in books such as The Goal (by Eliyahu M. Goldratt, 1984) and The Phoenix Project (by Gene Kim, Kevin Behr, and George Stafford, 2013), it is best only to expend effort directly at the bottleneck: improvements upstream of the bottleneck simply create a bigger backlog; improvements downstream of the bottleneck are premature optimizations.
+
+
+> To recap, a GitOps system evolves like this:
+> 
+> 1. Basic — configs in repo as a storage or backup mechanism.
+> 2. IaC — PRs from within the team trigger only CI-based deployments.
+> 3. GitOps — PRs from outside the team, pre-vetted PRs, post-merge testing.
+> 4. Automatic — Eliminate the human checks entirely.
+
+
+> While it may take a senior engineer to set up the initial system, automating tests is a good way for junior engineers to build up experience. Thus, GitOps creates mentoring and growth opportunities.
+
+Metrics Dashboards 
+* https://cloud.google.com/products/operations
+* https://grafana.com/
+* https://prometheus.io/
+
+
+Some real examples:
+* [Alerts and monitoring] https://www.youtube.com/watch?v=xrXjgtOSX6o
+* [Five Whys method](https://www.youtube.com/watch?v=9jS3cwjIJEo)
+* [Continuous improvement](https://www.youtube.com/watch?v=9jS3cwjIJEo)
+* [Use prometheus](https://www.youtube.com/watch?v=4bcBS1G3GWI)
+
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
 * [Quicklags interactive tutorial](https://www.qwiklabs.com/focuses/3563?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7996439)
@@ -297,3 +356,7 @@ Video Tutorials
 * [Book: Containerize your Apps with Docker and Kubernetes
  `free`](https://github.com/PacktPublishing/Containerize-your-Apps-with-Docker-and-Kubernetes)
  * [Kubernetes Learning Path `Microsoft`](https://azure.microsoft.com/en-us/resources/kubernetes-learning-path/)
+ * [locust.io - An open source load testing tool.](https://locust.io/)
+ * config management system such as Puppet or Chef.
+     * [Puppet](https://puppet.com/)
+     * [Chef](https://www.chef.io/)
