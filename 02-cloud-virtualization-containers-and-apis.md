@@ -383,6 +383,108 @@ python app.py
 ```
 Open browser from Codespaces prompt and follow the path `/change/1/34`
 
+#### Flask Microservice in Azure
+Open the shell and checkout the repo
+* https://github.com/skounis/cdf-python-docs-hello-world
+
+Create a virtual environment
+```bash
+# Create 
+python3 -m venv venv
+# Activate
+source venv/bin/activate
+# cd into the folder and
+# Install the requirements 
+pip install -r requirements.txt 
+# Run
+python app.py
+```
+> Nothing happens 
+
+```bash
+export FLASH_APP=app.py
+flask run
+```
+Output
+```
+(venv) stavros [ ~/cdf-python-docs-hello-world ]$ flask run
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+```
+
+##### Deploy the application
+```bash
+az webapp up --sku F1 -n hellopyworld
+```
+Output
+```
+(venv) stavros [ ~/cdf-python-docs-hello-world ]$ az webapp up --sku F1 -n hellopyworld
+The webapp 'hellopyworld' doesn't exist
+Creating Resource group 'skounis_rg_8304' ...
+Resource group creation complete
+Creating AppServicePlan 'skounis_asp_3541' ...
+Creating webapp 'hellopyworld' ...
+Configuring default logging for the app, if not already enabled
+Creating zip with contents of dir /home/stavros/cdf-python-docs-hello-world ...
+Getting scm site credentials for zip deployment
+Starting zip deployment. This operation can take a while to complete ...
+Deployment endpoint responded with status code 202
+BuildRequestReceived...          Success! 
+BuildPending...                  Success! 
+BuildInProgress...               Success! 
+
+Your application is running.
+
+You can launch the app at http://hellopyworld.azurewebsites.net
+Setting 'az webapp up' default arguments for current directory. Manage defaults with 'az configure --scope local'
+--resource-group/-g default: skounis_rg_8304
+--sku default: F1
+--plan/-p default: skounis_asp_3541
+--location/-l default: centralus
+--name/-n default: hellopyworld
+{
+  "URL": "http://hellopyworld.azurewebsites.net",
+  "appserviceplan": "skounis_asp_3541",
+  "location": "centralus",
+  "name": "hellopyworld",
+  "os": "Linux",
+  "resourcegroup": "skounis_rg_8304",
+  "runtime_version": "python|3.7",
+  "runtime_version_detected": "-",
+  "sku": "FREE",
+  "src_path": "//home//stavros//cdf-python-docs-hello-world"
+}
+(venv) stavros [ ~/cdf-python-docs-hello-world ]$ 
+```
+
+Visit
+* http://hellopyworld.azurewebsites.net
+
+Add a new route
+```python
+@app.route("/marco/<polo>")
+def marco(polo):
+    return "%s" % polo
+```
+
+Test locally 
+```bash
+flask run
+```
+Visit in browser the path `/marco/polo`
+
+Re-deploy
+```bash
+az webapp up
+```
+Visit
+* https://hellopyworld.azurewebsites.net/marco/polo
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
 * [Quicklags interactive tutorial](https://www.qwiklabs.com/focuses/3563?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7996439)
