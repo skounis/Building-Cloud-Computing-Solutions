@@ -347,6 +347,41 @@ Some real examples:
 * [Continuous improvement](https://www.youtube.com/watch?v=9jS3cwjIJEo)
 * [Use prometheus](https://www.youtube.com/watch?v=4bcBS1G3GWI)
 
+### Flask
+* lightweight web framework
+* the most popular framework in Python as of 2020
+* maps a function in Python to a web URL route.
+
+#### Real Flask Microservice
+* https://github.com/skounis/cdf-flask-change-microservice
+
+Checkout `main` in a GitHub codespace
+```bash
+# Install depedencies 
+make install
+# Install interactive python
+pip install ipython
+```
+
+Start and use the intective shell
+```bash
+ipython
+```
+```
+from app import change
+change(1.34)
+```
+Out
+```
+Out[3]: [{5: 'quarters'}, {1: 'nickels'}, {4: 'pennies'}]
+```
+
+Test the routes locally:
+```bash
+# Start listening
+python app.py
+```
+Open browser from Codespaces prompt and follow the path `/change/1/34`
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
