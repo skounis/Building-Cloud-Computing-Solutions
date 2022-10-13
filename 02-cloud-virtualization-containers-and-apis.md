@@ -485,6 +485,21 @@ az webapp up
 Visit
 * https://hellopyworld.azurewebsites.net/marco/polo
 
+### Serverless Microservice 
+* Functions serve as an event that trigers the execution
+* Serverless functions are listening to events 
+
+### Build on AWS
+* Create a new lambda functions https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions
+   * Set name 
+   * Select `Python 3.9`
+   * No other settings
+* Edit the code: Visit the "Code tab"
+   * Deploy it
+* Test it: Visit the "Test tab"
+
+
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
 * [Quicklags interactive tutorial](https://www.qwiklabs.com/focuses/3563?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7996439)
