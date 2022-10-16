@@ -499,6 +499,20 @@ Visit
    * Deploy it
 * Test it: Visit the "Test tab"
 
+### Step Functions
+{TBD}
+
+### AWS S3 bucket trigger
+* Get familiar with [Amazon Rekognition](https://eu-west-1.console.aws.amazon.com/rekognition/home?region=eu-west-1#/label-detection)
+* Listen for S3 events and run the recognition functions, see [aws-lambda-image-label-s3-trigger.py](https://github.com/skounis/cdf-serverless-cookbook/blob/main/aws-lambda-image-label-s3-trigger.py)
+* Trigger: Every time an S3 object is created 
+    * Add Trigger
+    * Select and S3 trigger, a bucket for all object create event
+
+
+> Read also the AWS Guide 
+> [Creating an Amazon Rekognition Lambda function
+](https://docs.aws.amazon.com/rekognition/latest/dg/stored-video-lambda.html)
 
 
 ## References
