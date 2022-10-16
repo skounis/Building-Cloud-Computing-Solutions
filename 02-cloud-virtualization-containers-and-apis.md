@@ -537,6 +537,7 @@ aws lambda invoke --function-name MarcoPolo --payload '{"name": "Marco"}' out.tx
     - Auth: Allow unauthenticated invocations
     - Runtime: Python `3.8`
 2. Use the source (see below)
+3. Deploy and test the function with the payload `{ "amount": "1.34"}`
 
 ```python
 def hello_world(request):
