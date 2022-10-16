@@ -500,7 +500,8 @@ Visit
 * Test it: Visit the "Test tab"
 
 ### Step Functions
-{TBD}
+* Create a state machine and use the MarcoPolo function and the [example configuration](https://github.com/noahgift/serverless-cookbook/blob/main/marco-polo-step-function.json)
+    * https://eu-west-1.console.aws.amazon.com/states/home 
 
 ### AWS S3 bucket trigger
 * Get familiar with [Amazon Rekognition](https://eu-west-1.console.aws.amazon.com/rekognition/home?region=eu-west-1#/label-detection)
@@ -514,6 +515,7 @@ Visit
 > [Creating an Amazon Rekognition Lambda function
 ](https://docs.aws.amazon.com/rekognition/latest/dg/stored-video-lambda.html)
 
+> TODO: Function does not have permissions to access the Rekognition service
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
