@@ -594,7 +594,7 @@ def hello_world(request):
         return f'Hello World!'
  ```
 
-#### Python virtual environmten 
+#### Python virtual environment 
 ```bash
 # cd into the projects directory:
 cd /home/coder/project
