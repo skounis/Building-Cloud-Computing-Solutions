@@ -523,6 +523,14 @@ The AWS Serverless Application Model (AWS SAM) is an open-source framework that 
 * [What is the AWS Serverless Application Model (AWS SAM)?](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
 * [Tutorial: Deploying a Hello World application](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html)
 
+#### AWS CLI and Lambda
+Trigger a function from the command line:
+```bash
+aws lambda invoke --function-name MarcoPolo --payload '{"name": "Marco"}' out.txt | cat out.txt
+```
+
+
+
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
