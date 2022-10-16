@@ -606,6 +606,18 @@ python3 -m pip install virtualenv
 source VENV/bin/activate
 ```
 
+### Enchance a Flask Microservice
+> Checkout the repo in Cloud9:
+> https://github.com/skounis/cdf-flask-change-microservice
+
+1. Create virtualenv and source it: `python3 -m venv ~/.fcm &&  source ~/.fcm/bin/activate`
+2. Install and Test: `make all`
+4. Run it: `python app.py`
+
+In Cloud9:
+1. Change the port to `8080` 
+2. Select: Tools > Preview > Preview Running Application
+
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
