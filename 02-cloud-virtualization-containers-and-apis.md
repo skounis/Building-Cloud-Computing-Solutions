@@ -613,8 +613,9 @@ source VENV/bin/activate
 1. Create virtualenv and source it: `python3 -m venv ~/.fcm &&  source ~/.fcm/bin/activate`
 2. Install and Test: `make all`
 4. Run it: `python app.py`
+5. Request the path `/change/1/34`
 
-In Cloud9:
+**In Cloud9:**
 1. Change the port to `8080` 
 2. Select: Tools > Preview > Preview Running Application
 
