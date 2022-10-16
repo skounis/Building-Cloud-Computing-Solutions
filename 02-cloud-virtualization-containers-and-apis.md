@@ -538,6 +538,15 @@ aws lambda invoke --function-name MarcoPolo --payload '{"name": "Marco"}' out.tx
     - Runtime: Python `3.8`
 2. Use the source (see below)
 3. Deploy and test the function with the payload `{ "amount": "1.34"}`
+4. Invoke it with the CLI (use the CloudShell)
+    - gcloud: `gcloud functions call ChangeMachine --data '{"amount": "1.34"}'`
+    - curl: 
+    ```bash
+    curl -m 70 -X POST https://us-central1-cdf-cloud-data-cd.cloudfunctions.net/ChangeMachine \
+    -H "Authorization: bearer $(gcloud auth print-identity-token)" \
+    -H "Content-Type: application/json" \
+    -d '{"amount":"1.34"}'
+    ```
 
 ```python
 def hello_world(request):
