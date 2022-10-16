@@ -594,6 +594,18 @@ def hello_world(request):
         return f'Hello World!'
  ```
 
+#### Python virtual environmten 
+```bash
+# cd into the projects directory:
+cd /home/coder/project
+# install virtualenv:  
+python3 -m pip install virtualenv
+# create a virtualenv: 
+/home/coder/.local/bin/virtualenv VENV
+# source the virtualenv (activate it):  
+source VENV/bin/activate
+```
+
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
