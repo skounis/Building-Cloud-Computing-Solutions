@@ -529,7 +529,60 @@ Trigger a function from the command line:
 aws lambda invoke --function-name MarcoPolo --payload '{"name": "Marco"}' out.txt | cat out.txt
 ```
 
+#### Google Cloud Functions
 
+1. Create a function https://console.cloud.google.com/functions/list
+    - Env: `1st Gen` 
+    - Trigger type: `HTTP`
+    - Auth: Allow unauthenticated invocations
+    - Runtime: Python `3.8`
+2. Use the source (see below)
+
+```python
+def hello_world(request):
+    """Responds to any HTTP request.
+    Args:
+        request (flask.Request): HTTP request object.
+    Returns:
+        The response text or any set of values that can be turned into a
+        Response object using
+        `make_response <http://flask.pocoo.org/docs/1.0/api/#flask.Flask.make_response>`.
+    """
+    request_json = request.get_json()
+    print(f"This is my payload: {request_json}")
+ 
+    if request_json and 'amount' in request_json:
+      raw_amount = request_json['amount']
+      print(f"This is my amount: {raw_amount}")
+      amount = float(raw_amount)
+      print(f"This is my float amount: {amount}")
+
+      # calculate the resultant change and store the result (res)
+      res = []
+      coins = [1,5,10,25] # value of pennies, nickels, dimes, quarters
+      coin_lookup = {25: "quarters", 10: "dimes", 5: "nickels", 1: "pennies"}
+
+      # divide the amount*100 (the amount in cents) by a coin value
+      # record the number of coins that evenly divide and the remainder
+      coin = coins.pop()
+      num, rem  = divmod(int(amount*100), coin)
+      # append the coin type and number of coins that had no remainder
+      res.append({num:coin_lookup[coin]})
+
+
+      # while there is still some remainder, continue adding coins to the result
+      while rem > 0:
+          coin = coins.pop()
+          num, rem = divmod(rem, coin)
+          if num:
+              if coin in coin_lookup:
+                  res.append({num:coin_lookup[coin]})
+
+      result = f"This is the result: {res}"
+      return result
+    else:
+        return f'Hello World!'
+ ```
 
 
 ## References
