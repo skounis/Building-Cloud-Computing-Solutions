@@ -495,6 +495,7 @@ Visit
    * Select `Python 3.9`
    * No other settings
 * Edit the code: Visit the "Code tab"
+   * Use the code in [marco-polo-lambda.py](https://github.com/skounis/cdf-serverless-cookbook/blob/main/marco-polo-lambda.py)
    * Deploy it
 * Test it: Visit the "Test tab"
 
