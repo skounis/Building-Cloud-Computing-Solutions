@@ -489,7 +489,7 @@ Visit
 * Functions serve as an event that trigers the execution
 * Serverless functions are listening to events 
 
-### Build on AWS
+#### Build on AWS
 * Create a new lambda functions https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions
    * Set name 
    * Select `Python 3.9`
@@ -499,11 +499,11 @@ Visit
    * Deploy it
 * Test it: Visit the "Test tab"
 
-### Step Functions
+#### Step Functions
 * Create a state machine and use the MarcoPolo function and the [example configuration](https://github.com/noahgift/serverless-cookbook/blob/main/marco-polo-step-function.json)
     * https://eu-west-1.console.aws.amazon.com/states/home 
 
-### AWS S3 bucket trigger
+#### AWS S3 bucket trigger
 * Get familiar with [Amazon Rekognition](https://eu-west-1.console.aws.amazon.com/rekognition/home?region=eu-west-1#/label-detection)
 * Listen for S3 events and run the recognition functions, see [aws-lambda-image-label-s3-trigger.py](https://github.com/skounis/cdf-serverless-cookbook/blob/main/aws-lambda-image-label-s3-trigger.py)
 * Trigger: Every time an S3 object is created 
@@ -516,6 +516,13 @@ Visit
 ](https://docs.aws.amazon.com/rekognition/latest/dg/stored-video-lambda.html)
 
 > TODO: Function does not have permissions to access the Rekognition service
+
+#### AWS Serverless Application Model
+The AWS Serverless Application Model (AWS SAM) is an open-source framework that you can use to build [serverless applications on AWS](https://aws.amazon.com/serverless/).
+
+* [What is the AWS Serverless Application Model (AWS SAM)?](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html)
+* [Tutorial: Deploying a Hello World application](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-getting-started-hello-world.html)
+
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
