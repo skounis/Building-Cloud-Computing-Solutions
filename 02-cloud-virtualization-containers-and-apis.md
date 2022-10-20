@@ -632,8 +632,28 @@ Key objectives
 > EventBridge: Create and manage events, for example: Call a cloud function
 > https://eu-west-1.console.aws.amazon.com/events/home?region=eu-west-1#/
 
-#### Alerts in Azure
+#### Alerts in shell script
+> Check if a file exists and return a specific error code != 0
+```bash
+touch config.yml
+touch check.sh
+# Edit the file and add the snippet that follows
+chmod +x check.sh
+# Run it 
+./check.sh
+```
 
+```bash
+#!/usr/bin/env bash
+
+FILE=config.yml
+if test -f "$FILE"; then 
+    echo "$FILE exists"
+else
+    echo "$FILE does not exist"
+    exit 2
+fi
+```
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
