@@ -619,6 +619,21 @@ source VENV/bin/activate
 1. Change the port to `8080` 
 2. Select: Tools > Preview > Preview Running Application
 
+## Week IV
+### Monitor and Alerting
+Key objectives
+* Optimize cost and performance
+* Effective and actionable monitoring
+
+> Alerts should be actionable
+
+#### CloudWatch
+
+> EventBridge: Create and manage events, for example: Call a cloud function
+> https://eu-west-1.console.aws.amazon.com/events/home?region=eu-west-1#/
+
+#### Alerts in Azure
+
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
