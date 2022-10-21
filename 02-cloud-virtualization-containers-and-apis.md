@@ -655,6 +655,11 @@ else
 fi
 ```
 
+### Load Testing
+> An introduction to https://locust.io/
+
+https://github.com/skounis/cdf-docker-flask-locust
+
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
 * [Quicklags interactive tutorial](https://www.qwiklabs.com/focuses/3563?catalog_rank=%7B%22rank%22%3A5%2C%22num_filters%22%3A0%2C%22has_search%22%3Atrue%7D&parent=catalog&search_id=7996439)
