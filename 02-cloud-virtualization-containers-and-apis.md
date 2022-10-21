@@ -681,7 +681,14 @@ Test
 * Return the the base page and execute `promhttp_metric_handler_requests_total`
 * Check the "Table" and "Graph" sections
 
+### Kaizen
+> From Japanese automobile industry
 
+* Identify how systematically, piece by piece, make things better
+* Continuously improvement is a daily choice we make. 
+* In the most of the case the reason for a failure is the lack of a daily process of continously try to do thing better, a bit at a time. 
+
+> You're either getting better or you're getting worse, and if you don't know which one, **you're probably getting worse**
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
