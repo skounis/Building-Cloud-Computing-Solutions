@@ -656,9 +656,32 @@ fi
 ```
 
 ### Load Testing
-> An introduction to https://locust.io/
+> An introduction to https://locust.io/ and https://prometheus.io/
 
-https://github.com/skounis/cdf-docker-flask-locust
+Check the Quick Start quide:
+* https://github.com/skounis/cdf-docker-flask-locust#quick-start
+
+#### Prometheus
+Use Cloud9. 
+
+```bash
+cd ~/environment
+# Download prometheus from https://prometheus.io/download/
+wget https://github.com/prometheus/prometheus/releases/download/v2.39.1/prometheus-2.39.1.linux-amd64.tar.gz
+tar zxf prometheus-2.39.1.linux-amd64.tar.gz 
+cd prometheus-2.39.1.linux-amd64/
+# Run prometheus
+./prometheus --config.file=prometheus.yml
+```
+
+Open the `9090` port in the Security Group of this Cloud9 instance. Visit the public address of the instance and visit the port `:9090`
+
+Test
+* Create some sampel metrics by following `/metrics` on the running Prometheus address.
+* Return the the base page and execute `promhttp_metric_handler_requests_total`
+* Check the "Table" and "Graph" sections
+
+
 
 ## References
 * [Windows and containers - Microsoft](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/)
