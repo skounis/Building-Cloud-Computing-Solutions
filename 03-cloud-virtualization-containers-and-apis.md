@@ -57,3 +57,25 @@ Notes and links
 https://github.com/noahgift/cloud-data-analysis-at-scale/blob/master/topics/end-of-moores-law.md
 
 Google Colab: https://github.com/noahgift/cloud-data-analysis-at-scale/blob/master/GPU_Programming.ipynb
+
+
+#### What is ASIC
+Application specific integrated circuit. Chip for a purpose. Designed for one thing/purpose
+* TPU: Tensor procesing unit.
+* GPU: Graphics programming - Very parallel operations
+* NCS: Intel Neural Compute Stick
+
+
+#### Taking Advantage of Colab Pro
+Profesional version of Colab
+
+#### The End of Moore's Law
+From 
+* https://noahgift.github.io/cloud-data-analysis-at-scale/topics/end-of-moores-law.html
+
+References
+* https://storage.googleapis.com/nexttpu/index.html
+* Step by step example: Just in Time compiler (JIT) or a GPU using a library like numba and a hosted runtime like Google Colab.
+    * https://github.com/noahgift/cloud-data-analysis-at-scale/blob/master/GPU_Programming.ipynb
+    
+
