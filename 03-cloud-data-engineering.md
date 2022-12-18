@@ -271,3 +271,26 @@ flask
 * AI/ML/Deep Learning: Analytics and Predictions 
 * Create products
 * Product targets the Users 
+
+
+#### Using EMR Spark to Run Parallel Jobs
+Start with [AWS EMR](https://eu-west-1.console.aws.amazon.com/elasticmapreduce/home?region=eu-west-1#)
+* Create a Notebook  
+   *  https://eu-west-1.console.aws.amazon.com/elasticmapreduce/home?region=eu-west-1#create-notebook:
+   *  Select to create a cluster
+   *  Leave all the rest as default
+* Create a spot instance cluster
+   * Select "Advanced options"
+   * Enable JupyterHub and Spark   
+   * Go next
+   * Select "Instance fleet" 
+   * Select 1 master, 8 core and 20 Task spot instances. (select spot for all)  
+
+Hadoop distributed file system 
+
+Terminate instances from the "Spot Requests" option
+* https://eu-west-1.console.aws.amazon.com/ec2/home?region=eu-west-1#SpotInstances:
+
+
+Pyspark.py
+* https://gist.github.com/noahgift/f3adcea4d02742939d3dd327e0af7eb1
