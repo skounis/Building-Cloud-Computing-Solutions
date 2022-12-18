@@ -230,3 +230,18 @@ flask
 
 ##### Objectives
 * Evaluate best practices for Cloud solutions with Big Data
+
+#### What is Big Data
+* Can't fit in a Laptop
+* You need x10 times the amount of RAM as the dataset. For 10GB data you need 100GB RAM
+* Tools Spark, Athena, other big data toolset that distribute the load among diferent machines.
+* You need the right tool for the right job.
+
+#### The Three V's of Big Data
+* Challenges
+ * Valiety: CSV, Binary or SQL files, key-value databases etc. 
+   * Tools for combine or extract eg AWS Glue  
+ * Velocity: >10K request/second a threashold for approaching big data.
+ * Volume: terabytes for petabytes of data need specialized tools and resources (CPU, RAM, Disk space)
+
+
