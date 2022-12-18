@@ -111,4 +111,11 @@ We could have 2 of the 3
 * Key-value databases: They do scale but are not consistent. Used in the case where consistency is not the highest priority. 
 
 
+#### Amdahl's Law
+>  diminishing returns that occur with parallelization
 
+Python in particular has the global interpreter Lock or Gil, which eliminates the ability to distribute amongst many cores
+
+After a certain threshold the gain in spead is not proportional to the computational power you use. 
+
+Most of the code is not purely parallel. 
