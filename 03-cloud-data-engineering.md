@@ -170,7 +170,7 @@ Testing topics:
 2. Scaffold the files
 3. Create a Python Virtual ENV
 4. Populate the `Makefile`
-5. Set requirements
+5. Set requirements and isntall them `make install`
 
 
 Scaffolding
