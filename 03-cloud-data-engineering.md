@@ -79,3 +79,16 @@ References
     * https://github.com/noahgift/cloud-data-analysis-at-scale/blob/master/GPU_Programming.ipynb
     
 
+### Building Distributing Systems
+#### Introduction
+* Instumentation
+* CAP Theorem
+* Amdahl's Law
+* Elasticity: Response to higher load 
+* Highly available: Respond to a request despite the increased trafic 
+* Debuggin Python
+
+Objectives
+* Develop distributed systems that apply software engineering best practices
+
+#### Logging and Instrumentation Distributed Systems
