@@ -169,6 +169,8 @@ Testing topics:
 1. Use Codespaces
 2. Scaffold the files
 3. Create a Python Virtual ENV
+4. Populate the `Makefile`
+5. Set requirements
 
 
 Scaffolding
@@ -187,3 +189,26 @@ virtualenv ~/.advanced-testing
 source ~/.advanced-testing/bin/activate
 ```
 
+Makefile
+```
+install:
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
+
+test:
+	python -m pytest -vv --cov=hello --cov=hellocli test_hello.py
+
+lint:
+	pylint --disable=R,C hello.py 
+
+all: install lint test
+```
+
+Requirements
+```
+pylint
+pytest
+pytest-cov
+click
+flask
+```
