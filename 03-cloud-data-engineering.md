@@ -243,5 +243,8 @@ flask
    * Tools for combine or extract eg AWS Glue  
  * Velocity: >10K request/second a threashold for approaching big data.
  * Volume: terabytes for petabytes of data need specialized tools and resources (CPU, RAM, Disk space)
+   * Process on batches or streaming. Streaming increases the complexity
+   * Tools for working with batches: AWS Glue, AWS Data Pipeline, AWS Batch, and EMR
+   * Tools for working with streaming: Kinesis, IoT, and Spark EMR
 
 
