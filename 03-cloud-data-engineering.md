@@ -216,3 +216,17 @@ flask
 * Print - https://github.com/skounis/cdf-advanced-testing-techniques/releases/tag/v0.0.1
 * pdb - Interactive debuggin in console (`n`: next, `variable|statement`: evaluate) - https://github.com/skounis/cdf-advanced-testing-techniques/releases/tag/v0.0.2
 * Testing
+
+
+### Introduction to Big Data
+
+#### Introduction
+* What is Big Data
+* Their three V's: Velocity, Variety, Volume
+* Data lakes
+* Big Date processing: Tools (Spank, MapReduce)
+* Data feedback loop: Understand the data and get better analytics 
+* Use EMR Spark for running parallel jobs
+
+##### Objectives
+* Evaluate best practices for Cloud solutions with Big Data
