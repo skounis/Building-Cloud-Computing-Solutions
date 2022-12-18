@@ -212,3 +212,7 @@ pytest-cov
 click
 flask
 ```
+##### Debug
+* Print
+* pdb
+* Testing
