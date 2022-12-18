@@ -122,3 +122,11 @@ Most of the code is not purely parallel.
 
 #### Elasticity
 > Scale up or scale down automaticaly based on the load. Elasticity is about money
+
+
+#### Highly Available Nine Nine's
+Related terms: Highly available, uptime orservice level agreement. 
+
+* 99.999: Daily: 0.86s of downtime - https://uptime.is/
+* Amazon S3: 11 nines (99.999999999%) durability.
+
