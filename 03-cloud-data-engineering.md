@@ -247,4 +247,19 @@ flask
    * Tools for working with batches: AWS Glue, AWS Data Pipeline, AWS Batch, and EMR
    * Tools for working with streaming: Kinesis, IoT, and Spark EMR
 
+#### Data Lakes
+* Data all flows in
+* Data can be processed in the same spot where the data lives
+* S3 fits the bill since it
+  * Is highly available and reliable
+  * Scales up infinitely
+  * Provides direct access for analytics and dashboard tools
+  * Can be usid for real-time stream processing
+  * Can be synchronized with any in-premises datacenter. 
 
+> We do not move data aroung. We work with them where they are.
+
+#### Big Data Processing
+* Historical data: Dashboard for sales
+* Real-time eg ad-bidding or streaming
+* Future: Prediction and forecasting (ML)
