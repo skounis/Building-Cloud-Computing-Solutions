@@ -263,3 +263,11 @@ flask
 * Historical data: Dashboard for sales
 * Real-time eg ad-bidding or streaming
 * Future: Prediction and forecasting (ML)
+
+#### Data Feedback Loop
+* Users 
+* Users generate data 
+* These become big data
+* AI/ML/Deep Learning: Analytics and Predictions 
+* Create products
+* Product targets the Users 
