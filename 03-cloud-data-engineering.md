@@ -119,3 +119,6 @@ Python in particular has the global interpreter Lock or Gil, which eliminates th
 After a certain threshold the gain in spead is not proportional to the computational power you use. 
 
 Most of the code is not purely parallel. 
+
+#### Elasticity
+> Scale up or scale down automaticaly based on the load. Elasticity is about money
