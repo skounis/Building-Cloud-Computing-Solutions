@@ -213,6 +213,6 @@ click
 flask
 ```
 ##### Debug
-* Print
-* pdb
+* Print - https://github.com/skounis/cdf-advanced-testing-techniques/releases/tag/v0.0.1
+* pdb - Interactive debuggin in console (`n`: next, `variable|statement`: evaluate) - https://github.com/skounis/cdf-advanced-testing-techniques/releases/tag/v0.0.2
 * Testing
