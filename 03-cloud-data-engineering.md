@@ -130,3 +130,60 @@ Related terms: Highly available, uptime orservice level agreement.
 * 99.999: Daily: 0.86s of downtime - https://uptime.is/
 * Amazon S3: 11 nines (99.999999999%) durability.
 
+#### Debugging Python Code
+Testing topics:
+* Buyild systems
+* Tools
+* Debugging
+* Continuous deliver
+
+
+##### Build systems
+* SaaS (GitHub actions)
+* Open Source (Jenkins)
+* Cloud-native (AWS Code Build)
+
+##### Tools
+* pylint (check syntax, suggests best practices) 
+* Python black (formating tool)
+* AWS Code Guru (AI suggestion for code changes)
+
+##### Debugging
+* print statements
+* PDB The Python Debugger - https://docs.python.org/3/library/pdb.html
+* Testing
+
+##### Continuous Delivery
+* SaaS (GitHub Actions)
+* GCP (Cloud Build) 
+* AWS (Elastic Beanstalk)
+
+> The code is constantly deployed and is always in a working state
+
+
+#### Hands on - GitHub
+* https://github.com/skounis/cdf-advanced-testing-techniques
+* https://github.com/noahgift/advanced-testing-techniques
+
+##### Steps
+1. Use Codespaces
+2. Scaffold the files
+3. Create a Python Virtual ENV
+
+
+Scaffolding
+```bash
+touch Makefile
+touch requirements.txt
+touch hello.py
+touch test_hello.py
+```
+
+Virtual ENV
+```bash
+# Create
+virtualenv ~/.advanced-testing
+# Activate
+source ~/.advanced-testing/bin/activate
+```
+
