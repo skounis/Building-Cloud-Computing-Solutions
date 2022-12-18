@@ -92,3 +92,23 @@ Objectives
 * Develop distributed systems that apply software engineering best practices
 
 #### Logging and Instrumentation Distributed Systems
+* Crytical component
+* Data sciense fro software engineering
+* You know what is happening with the system
+* Look at all the logs in a centralized location
+
+
+#### CAP Theorem
+> Trade off between consistency, availability and fault-tolerance
+
+* Consistency: The same data is received for every requuest
+* Availability: Every request receives healthy responce
+* Fault-tolerance: The system continuous to function as messages drop between nodes
+
+We could have 2 of the 3
+
+* Relational databases: Are very consistent but they do not scale without Replicas. Replicas are highly available in exchange of consistency. They need some time to get syncronized 
+* Key-value databases: They do scale but are not consistent. Used in the case where consistency is not the highest priority. 
+
+
+
