@@ -294,3 +294,26 @@ Terminate instances from the "Spot Requests" option
 
 Pyspark.py
 * https://gist.github.com/noahgift/f3adcea4d02742939d3dd327e0af7eb1
+
+
+## Week II
+### Introduction to Data Engineering
+* Batch vs Streaming vs Events
+* CLI tools with `Click` (python)
+* Containerized CLI Tools
+* Advanced Testing Techniques
+* Map functions to CLI
+
+#### Objectives
+* Analyze best practices 
+* Apply best practices in CLI tools
+* Build Python CLI tools with `Click` 
+
+#### What is Data Engineering:
+* build pipelines that transport data or transform data at a periodic basis
+* A data engineer is focused exclusively on the software engineering best practices around the movement and transport of data.
+
+Concepts:
+* Batch. e.g. nightly jobs
+* Streaming. Data are constantly updated, e.g. Stock Ticker
+* Events. Prefered way, e.g. handle files after we upload them to S3
