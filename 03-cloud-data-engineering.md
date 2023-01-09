@@ -327,3 +327,12 @@ Reference repo
 
 Process, see:
 * https://github.com/skounis/cdf-codespace-devops/releases/tag/v1.0.0
+
+### Containerized CLI
+Reference
+* https://github.com/noahgift/container-from-scratch-python
+
+We can package the runtime into a container's CLI. A way to distribute CLI tools.
+
+Process, see:
+* https://github.com/skounis/cdf-codespace-devops/releases/tag/v1.1.0
