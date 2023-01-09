@@ -317,3 +317,13 @@ Concepts:
 * Batch. e.g. nightly jobs
 * Streaming. Data are constantly updated, e.g. Stock Ticker
 * Events. Prefered way, e.g. handle files after we upload them to S3
+
+### Command line tools
+* Github Codespaces, Actions CI/CD
+* Docker 
+
+Reference repo
+* https://github.com/noahgift/codespace-devops
+
+Process, see:
+* https://github.com/skounis/cdf-codespace-devops/releases/tag/v1.0.0
