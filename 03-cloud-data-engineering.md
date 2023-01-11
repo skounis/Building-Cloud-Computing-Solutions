@@ -431,3 +431,26 @@ from app import change
 def test_change():
     assert [{5: "quarters"}, {1: "nickels"}, {4: "pennies"}] == change(1.34)
 ```
+
+### Advanced Code Testing
+
+#### Amazon CodeGuru
+An emerging AI tools for code analysis and review
+* https://aws.amazon.com/codeguru/
+
+Provides
+* Reviews and provides recomendations - Static code analysis
+* Provides code and security recomendations
+
+Alternatives or similar
+* [DevML](https://github.com/noahgift/devml)  
+Runs on GitHub and prepares metrics reports. e.g.
+  * Who works on the code and how often
+  * Files changes and frequency 
+  * etc
+* [Codeclimate](https://codeclimate.com/)
+
+Enables KAIZEN for software. 
+
+
+
