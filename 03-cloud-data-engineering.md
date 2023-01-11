@@ -452,5 +452,7 @@ Runs on GitHub and prepares metrics reports. e.g.
 
 Enables KAIZEN for software. 
 
-
+#### Amazon CodeBuild
+* https://aws.amazon.com/codebuild/
+It's a build system. Similar to GitHub Actions but for the AWS environment
 
