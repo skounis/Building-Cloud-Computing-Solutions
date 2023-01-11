@@ -336,3 +336,98 @@ We can package the runtime into a container's CLI. A way to distribute CLI tools
 
 Process, see:
 * https://github.com/skounis/cdf-codespace-devops/releases/tag/v1.1.0
+
+### Build a CLI
+```bash
+# Get into the project's folder
+cd /home/coder/project
+# Install Virtualenv
+python3 -m pip install virtualenv
+# Create a Virtual Environment
+/home/coder/.local/bin/virtualenv VENV
+# Source the virtualenv (activate it):  
+source VENV/bin/activate
+```
+
+#### app.py
+Note the comment in the 1st line which makes the `app.py` executable.
+```python
+#!/usr/bin/env python
+import click
+
+def change(amount):
+    # calculate the resultant change and store the result (res)
+    res = []
+    coins = [1, 5, 10, 25]  # value of pennies, nickels, dimes, quarters
+    coin_lookup = {25: "quarters", 10: "dimes", 5: "nickels", 1: "pennies"}
+
+    # divide the amount*100 (the amount in cents) by a coin value
+    # record the number of coins that evenly divide and the remainder
+    coin = coins.pop()
+    num, rem = divmod(int(amount * 100), coin)
+    # append the coin type and number of coins that had no remainder
+    res.append({num: coin_lookup[coin]})
+
+    # while there is still some remainder, continue adding coins to the result
+    while rem > 0:
+        coin = coins.pop()
+        num, rem = divmod(rem, coin)
+        if num:
+            if coin in coin_lookup:
+                res.append({num: coin_lookup[coin]})
+    return res
+
+@click.command()
+@click.option(
+    "--amount",
+    prompt="Amount: ",
+    help="Creates change for dollar and cents value:  i.e. 1.34",
+)
+def make_change(amount):
+    """Gives Correct Change"""
+
+    result = change(float(amount))
+    click.echo(click.style(f"Change for {amount}:", fg="red"))
+    for correct_change in result:
+        for num, coin in correct_change.items():
+            click.echo(click.style(f"{coin}: {num}", fg="green"))
+
+if __name__ == "__main__":
+    # pylint: disable=no-value-for-parameter
+    make_change()
+```
+
+#### Other files
+Makefile
+```
+install:
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
+
+lint:
+	pylint --disable=R,C app
+
+test:
+	pytest -vv --cov-report term-missing --cov=app test_*.py
+
+format:
+	black *.py
+```
+
+requirements.txt
+```
+pylint==2.7.2
+click==7.1.2
+black==20.8b1
+pytest==6.2.
+pytest-cov==2.11.1
+```
+
+test_app.py
+```python
+from app import change
+
+
+def test_change():
+    assert [{5: "quarters"}, {1: "nickels"}, {4: "pennies"}] == change(1.34)
+```
