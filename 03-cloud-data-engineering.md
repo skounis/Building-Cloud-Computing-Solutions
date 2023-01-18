@@ -456,7 +456,7 @@ Enables KAIZEN for software.
 * https://aws.amazon.com/codebuild/
 It's a build system. Similar to GitHub Actions but for the AWS environment
 
-#### Mapping functions to CLI
+#### Mapping functions to CLI I - Overview
 **Functions**
 * Math
 * Parallel/Distributed Computing
@@ -474,6 +474,7 @@ It's a build system. Similar to GitHub Actions but for the AWS environment
 https://github.com/noahgift/function-bike-rider
 This is a repo for showing what you can do with a function
 
+Fork: https://github.com/skounis/cdf-function-bike-rider
 Test with `ipython`
 ```bash
 ipython
@@ -484,3 +485,25 @@ In [1]: from hello import marco
 In [2]: marco("bob")
 Out[2]: 'No!'
 ```
+#### Mapping functions to CLI II - AWS S3
+1. Get some images (lion, tiger)
+2. Test the [Rekognition service](https://eu-west-1.console.aws.amazon.com/rekognition/home?region=eu-west-1#/)
+3. Start a Cloud9 env
+4. Git clone `git@github.com:skounis/cdf-function-bike-rider.git`
+5. Create a virtual env (see readme)
+6. Create an S3 bucket and upload the lion image
+7. run `chmod +x cvcli.py` and `./cvcli.py`
+
+Copy files from Cloud9 to S3
+```bash
+aws s3 cp leopard.jpg s3://cdf-function-bike-rider
+```
+
+Create a Lambda function
+1. Go to [AWS Lambda](https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions)
+2. Create a `Python` function
+3. Use: https://github.com/noahgift/edge-computer-vision/blob/master/s3-trigger-lambda.py
+4. Add an S3 event trigger 
+5. Upload an image 
+6. See the Cloudwatch logs 
+7. NOTE: Set the permissions so the function access the S3 bucket and Rekognition. Edit the attached policy.
