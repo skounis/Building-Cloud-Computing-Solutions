@@ -456,3 +456,31 @@ Enables KAIZEN for software.
 * https://aws.amazon.com/codebuild/
 It's a build system. Similar to GitHub Actions but for the AWS environment
 
+#### Mapping functions to CLI
+**Functions**
+* Math
+* Parallel/Distributed Computing
+* Decorators
+* Pandas (?)
+* GPU / High Performance Computing (numba library - python)
+* CLI
+* Web services
+
+> The cleanest way to map a piece of logic to something else
+
+> Better fit versus the OOP for microservices and cloud computing 
+
+**Showcase**
+https://github.com/noahgift/function-bike-rider
+This is a repo for showing what you can do with a function
+
+Test with `ipython`
+```bash
+ipython
+```
+```
+In [1]: from hello import marco
+
+In [2]: marco("bob")
+Out[2]: 'No!'
+```
