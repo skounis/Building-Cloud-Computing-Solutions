@@ -647,10 +647,10 @@ ipython
 # In [1]: import wikipedia
 # In [2]: wikipedia.summary("twitter")
 ```
-# Invoke with ipython
-pip install ipython
-```
 
+##### Permissions
+> Provide the function access to the [Comprehend Service](https://docs.aws.amazon.com/comprehend/late)
+For example `ComprehendFullAccess`
 
 
 
