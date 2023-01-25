@@ -605,3 +605,52 @@ sam deploy --guided
 Prepare a record in the [Container Registry](https://eu-west-1.console.aws.amazon.com/ecr/repositories?region=eu-west-1)
 
 #### Wikipedia
+```bash
+sam init
+# Select Python 3.8 and Image. Name the app `wikipedia-2021`
+cd wikipedia-2021/hello_world
+# Adjust the requirements.txt
+# Create a Virtual Env
+python3 -m venv ~/.wiki
+source ~/.wiki/bin/activate
+pip install -r requirements.txt
+# Build sam
+cd ..
+sam build
+# Invoke the application (start the container and run it)
+sam local invoke
+# If fails due to the missing payload. 
+# Create a payload.json and add the content below
+# {
+#     "entity": "twitter"
+# }
+touch payload.json
+# Invoke again
+sam local invoke -e payload.json 
+# Deploy
+sam deploy --guided
+# Note: we need to create the S3 repository it asks for
+# Ask to create the ECR repo
+#  Create managed ECR repositories for all functions? [Y/n]: 
+```
+
+The process with create
+1. [An ECR Repository](https://eu-west-1.console.aws.amazon.com/ecr/repositories?region=eu-west-1)
+2. [A Lambda function](https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions) type `image`
+
+Play with the `wikipedia` library with ipython
+```bash
+pip install ipython
+ipython
+# and use 
+#
+# In [1]: import wikipedia
+# In [2]: wikipedia.summary("twitter")
+```
+# Invoke with ipython
+pip install ipython
+```
+
+
+
+
