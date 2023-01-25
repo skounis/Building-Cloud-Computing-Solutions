@@ -507,3 +507,101 @@ Create a Lambda function
 5. Upload an image 
 6. See the Cloudwatch logs 
 7. NOTE: Set the permissions so the function access the S3 bucket and Rekognition. Edit the attached policy.
+
+
+
+## Week III
+### Serverless Data Engineering Systems
+* Serverless concepts
+* Serverless data pipelines
+* AWS & GCP
+
+#### Objectives
+* Build a serverless system
+ 
+#### What is serverless
+* AWS Lambda: You don't need to worry about the server infrastructure underneath
+
+#### Service model
+* Cloud Service Model
+  * IaaS: Control CPU, Storage, Network. You buy cheep.
+  * PaaS: Webserver based components, Google App Enginn, Elastic Beanstalk
+  * Serverless: Easier and more high level. Function, Google Cloud Functions, AWS Lambda
+
+#### Functions
+* AWS Lambda: Function as a Service FaaS
+* Functions the hear of the system: Accesses all the clound components 
+  * GPU Programming
+  * CLI 
+  * Web service
+  * Data Science
+  * ML
+
+#### Ecosystem
+* AWS: Currently the leader
+  * AWS Lambda 
+  * Triggers: Hook the function to Web, S3, Data, Timers etc 
+  * Steps Functions: Chain together Lambda Functions
+  * Chalice: SDK for AWS makes easy to do things 
+* GCP
+  * Cloud Run: A Docker container we can turn into a service, API - Container as a Servie (CaaS)
+  * Cloud functions: Triggers, Message
+* Azure
+  * Cloud functions
+  * App Services: Platform as a Service, eg deploy a Flask app as a web service, see [flask-ml-azure-serverless](https://github.com/noahgift/flask-ml-azure-serverless)    	 
+
+#### AWS Lambda Overview
+* SAM, Serverless Application Mananager: 
+
+#### AWS Cloud 9
+* [Cloud 9](https://eu-west-1.console.aws.amazon.com/cloud9control/home?region=eu-west-1)
+* Calls/Accesses all the AWS services
+* `aws` cli available, eg `aws s3 help`, `aws help`, `aws s3 ls` 
+
+
+#### AWS Cloud 9 - Hello world
+> Build an AWS Lambda function that returns back a result through API Gateway
+* [Git Repo](https://github.com/skounis/cdf-awslambda)
+
+Generate SSH keys in Cloud 9 console for accessing GitHub
+```bash
+ssh-keygen -t rsa
+cat /home/ec2-user/.ssh/id_rsa.pub
+```
+Add the key in GitHub
+
+Check the available spase 
+```bash
+df
+```
+Resize if needed with the [resize.sh](https://github.com/skounis/cdf-awslambda/blob/master/resize.sh) script.
+
+##### Lambda functions
+> Note: Create new Cloud 9 EnV. Prompts are not exaclty the same.
+```bash 
+sam init
+```
+* Select 1 and 2 
+* Select `5 - amazon/python3.8-base`
+* Name: `HelloWorldLambda2023`
+* Select: `1 - Hello World Lambda Image Example`
+
+Build
+```bash
+sam build
+```
+
+See `./hello_world`: A dockerazid python application.
+Invoke it: Runs local
+```bash
+sam local invoke
+```
+
+Deploy
+```bash
+sam deploy --guided
+```
+
+Prepare a record in the [Container Registry](https://eu-west-1.console.aws.amazon.com/ecr/repositories?region=eu-west-1)
+
+#### Wikipedia
